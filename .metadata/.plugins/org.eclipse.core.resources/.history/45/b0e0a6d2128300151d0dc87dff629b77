@@ -1,0 +1,40 @@
+
+
+/**
+ * @author callum
+ */
+object WarehouseOrderTrackingapplication {
+  
+  def main(args: Array[String]) {
+    
+  } 
+}
+
+class WarehouseOrderTrackingapplication {
+  
+  // Class Constructor
+  def WarehouseOrderTrackingapplication() {
+    
+  }
+  
+  // Run the app
+  def runApp() {
+    
+  }
+  
+  // Display the application title
+  def displayApplicationTitle() {
+    
+    // Print application title
+    println("\n*******************************************");
+    println(" Warehouse Order Tracking Application V1.0");
+    println("*******************************************\n");
+  }
+  
+  // Prompt user for login details
+  def promptUserForLoginDetails() {
+    
+    // Display the application title
+    displayApplicationTitle
+  }
+}

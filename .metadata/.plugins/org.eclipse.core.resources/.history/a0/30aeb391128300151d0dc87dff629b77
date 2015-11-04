@@ -1,0 +1,24 @@
+
+
+/**
+ * @author callum
+ */
+object WarehouseOrderTrackingapplication {
+  
+  def main(args: Array[String]) {
+    
+  } 
+}
+
+class WarehouseOrderTrackingapplication {
+  
+  // Class Constructor
+  def WarehouseOrderTrackingapplication() {
+    
+  }
+  
+  // Run the app
+  def runApp() {
+    
+  }
+}
