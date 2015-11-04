@@ -1,0 +1,163 @@
+2015-11-04 16:30:26,036 ERROR [main] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-11-04 16:30:26,036 ERROR [main] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-11-04 16:30:26,036 ERROR [main] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-11-04 16:31:17,881  WARN [main] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:31:17,881  WARN [main] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:31:18,053  WARN [main] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:31:18,053  WARN [main] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:31:18,240  WARN [Worker-4] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:31:18,240  WARN [Worker-4] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:31:26,500  WARN [Worker-4] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:31:26,500  WARN [Worker-4] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:31:26,515  WARN [Worker-4] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:31:26,515  WARN [Worker-4] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:31:29,669  WARN [main] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:31:29,669  WARN [main] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:31:38,764  WARN [main] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:31:38,764  WARN [main] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:31:38,952  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:31:38,952  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:31:38,967  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:31:38,967  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:31:39,544  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:31:39,544  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:31:40,605  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:31:40,605  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:31:40,636  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:31:40,636  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:31:40,652  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:31:40,652  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:32:28,412  WARN [Worker-4] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:32:28,412  WARN [Worker-4] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:32:28,443  WARN [Worker-4] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:32:28,443  WARN [Worker-4] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:32:28,456  WARN [Worker-4] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:32:28,456  WARN [Worker-4] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:32:28,566  WARN [Worker-4] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:32:28,566  WARN [Worker-4] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:32:29,341  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:32:29,341  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:32:39,428  WARN [Worker-7] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:32:39,428  WARN [Worker-7] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:32:39,442  WARN [Worker-7] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:32:39,442  WARN [Worker-7] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:32:39,454  WARN [Worker-7] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:32:39,454  WARN [Worker-7] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:33:08,375  WARN [Worker-1] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:33:08,376  WARN [Worker-1] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:33:08,402  WARN [Worker-1] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:33:08,402  WARN [Worker-1] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:33:10,138  WARN [Worker-1] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:33:10,138  WARN [Worker-1] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:33:25,109  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:33:25,110  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:33:25,141  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:33:25,142  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:33:25,553  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:33:25,553  WARN [Worker-5] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:33:45,622 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Throwable during asyncExec
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:379)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:130)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:105)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:95)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:147)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:961)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:810)
+	at scala.tools.nsc.interactive.Global$$anonfun$getTypedTreeAt$1.apply(Global.scala:840)
+	at scala.tools.nsc.interactive.Global$$anonfun$getTypedTreeAt$1.apply(Global.scala:840)
+	at scala.tools.nsc.interactive.Global$$anonfun$respond$1.apply(Global.scala:699)
+	at scala.tools.nsc.interactive.Global$$anonfun$respond$1.apply(Global.scala:699)
+	at scala.tools.nsc.interactive.Global.respondGradually(Global.scala:706)
+	at scala.tools.nsc.interactive.Global.respond(Global.scala:699)
+	at scala.tools.nsc.interactive.Global.getTypedTreeAt(Global.scala:840)
+	at scala.tools.nsc.interactive.CompilerControl$AskTypeAtItem.apply$mcV$sp(CompilerControl.scala:326)
+	at scala.tools.nsc.interactive.Global$$anonfun$pollForWork$1.apply$mcV$sp(Global.scala:504)
+	at scala.util.control.Breaks.breakable(Breaks.scala:38)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:429)
+	at scala.tools.nsc.interactive.Global.checkForMoreWork(Global.scala:518)
+	at scala.tools.nsc.interactive.Global.signalDone(Global.scala:359)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5417)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedInternal(Typers.scala:5422)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5369)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5373)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedType(Typers.scala:5516)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedType(Typers.scala:5519)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedDefDef(Typers.scala:2191)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5307)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5358)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5395)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedInternal(Typers.scala:5422)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5369)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5373)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5451)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedStat$1(Typers.scala:3047)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$65.apply(Typers.scala:3151)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$65.apply(Typers.scala:3151)
+	at scala.collection.immutable.List.loop$1(List.scala:173)
+	at scala.collection.immutable.List.mapConserve(List.scala:189)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3151)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:1921)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1808)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5309)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5358)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5395)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedInternal(Typers.scala:5422)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5369)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5373)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedDocDef(Typers.scala:132)
+	at org.scalaide.core.internal.compiler.InteractiveScaladocAnalyzer$$anon$1.scala$tools$nsc$doc$ScaladocAnalyzer$ScaladocTyper$$super$typedDocDef(ScaladocGlobalCompatibilityTrait.scala:10)
+	at scala.tools.nsc.doc.ScaladocAnalyzer$ScaladocTyper$class.typedDocDef(ScaladocAnalyzer.scala:52)
+	at org.scalaide.core.internal.compiler.InteractiveScaladocAnalyzer$$anon$1.typedDocDef(ScaladocGlobalCompatibilityTrait.scala:10)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedOutsidePatternMode$1(Typers.scala:5334)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInAnyMode$1(Typers.scala:5352)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5359)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5395)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedInternal(Typers.scala:5422)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5369)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5373)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5451)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedStat$1(Typers.scala:3047)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$65.apply(Typers.scala:3151)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$65.apply(Typers.scala:3151)
+	at scala.collection.immutable.List.loop$1(List.scala:173)
+	at scala.collection.immutable.List.mapConserve(List.scala:189)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3151)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5014)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5311)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5358)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5395)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedInternal(Typers.scala:5422)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5369)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5373)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5447)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$$anon$3.apply(Analyzer.scala:102)
+	at scala.tools.nsc.Global$GlobalPhase$$anonfun$applyPhase$1.apply$mcV$sp(Global.scala:440)
+	at scala.tools.nsc.Global$GlobalPhase.withCurrentUnit(Global.scala:431)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:440)
+	at scala.tools.nsc.interactive.Global$TyperRun$$anonfun$applyPhase$1.apply(Global.scala:1225)
+	at scala.tools.nsc.interactive.Global$TyperRun$$anonfun$applyPhase$1.apply(Global.scala:1225)
+	at scala.reflect.internal.SymbolTable.enteringPhase(SymbolTable.scala:235)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1225)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1218)
+	at scala.tools.nsc.interactive.Global.scala$tools$nsc$interactive$Global$$typeCheck(Global.scala:668)
+	at scala.tools.nsc.interactive.Global$$anonfun$backgroundCompile$5$$anonfun$apply$8.apply(Global.scala:583)
+	at scala.tools.nsc.interactive.Global$$anonfun$backgroundCompile$5.apply(Global.scala:579)
+	at scala.tools.nsc.interactive.Global$$anonfun$backgroundCompile$5.apply(Global.scala:579)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:778)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:777)
+	at scala.tools.nsc.interactive.Global.backgroundCompile(Global.scala:579)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:25)
+2015-11-04 16:33:50,886  WARN [Worker-7] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:33:50,886  WARN [Worker-7] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:33:50,898  WARN [Worker-7] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:33:50,898  WARN [Worker-7] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:33:53,330  WARN [Worker-7] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:33:53,331  WARN [Worker-7] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:34:03,254  WARN [Worker-6] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:34:03,255  WARN [Worker-6] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:34:03,272  WARN [Worker-6] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:34:03,272  WARN [Worker-6] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-04 16:34:03,647  WARN [Worker-6] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-04 16:34:03,648  WARN [Worker-6] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.

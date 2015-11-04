@@ -1,0 +1,121 @@
+!SESSION 2015-11-04 16:29:46.870 -----------------------------------------------
+eclipse.buildId=4.1.1-vfinal-20150727-1320-Typesafe
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-04 16:30:54.210
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-04 16:30:54.210
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\callum'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.scala-ide.sdt.core 4 0 2015-11-04 16:33:45.620
+!MESSAGE Throwable during asyncExec
+!STACK 0
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:379)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:130)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:105)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:95)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:147)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:961)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:810)
+	at scala.tools.nsc.interactive.Global$$anonfun$getTypedTreeAt$1.apply(Global.scala:840)
+	at scala.tools.nsc.interactive.Global$$anonfun$getTypedTreeAt$1.apply(Global.scala:840)
+	at scala.tools.nsc.interactive.Global$$anonfun$respond$1.apply(Global.scala:699)
+	at scala.tools.nsc.interactive.Global$$anonfun$respond$1.apply(Global.scala:699)
+	at scala.tools.nsc.interactive.Global.respondGradually(Global.scala:706)
+	at scala.tools.nsc.interactive.Global.respond(Global.scala:699)
+	at scala.tools.nsc.interactive.Global.getTypedTreeAt(Global.scala:840)
+	at scala.tools.nsc.interactive.CompilerControl$AskTypeAtItem.apply$mcV$sp(CompilerControl.scala:326)
+	at scala.tools.nsc.interactive.Global$$anonfun$pollForWork$1.apply$mcV$sp(Global.scala:504)
+	at scala.util.control.Breaks.breakable(Breaks.scala:38)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:429)
+	at scala.tools.nsc.interactive.Global.checkForMoreWork(Global.scala:518)
+	at scala.tools.nsc.interactive.Global.signalDone(Global.scala:359)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5417)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedInternal(Typers.scala:5422)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5369)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5373)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedType(Typers.scala:5516)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedType(Typers.scala:5519)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedDefDef(Typers.scala:2191)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5307)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5358)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5395)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedInternal(Typers.scala:5422)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5369)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5373)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5451)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedStat$1(Typers.scala:3047)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$65.apply(Typers.scala:3151)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$65.apply(Typers.scala:3151)
+	at scala.collection.immutable.List.loop$1(List.scala:173)
+	at scala.collection.immutable.List.mapConserve(List.scala:189)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3151)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:1921)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1808)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5309)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5358)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5395)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedInternal(Typers.scala:5422)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5369)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5373)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedDocDef(Typers.scala:132)
+	at org.scalaide.core.internal.compiler.InteractiveScaladocAnalyzer$$anon$1.scala$tools$nsc$doc$ScaladocAnalyzer$ScaladocTyper$$super$typedDocDef(ScaladocGlobalCompatibilityTrait.scala:10)
+	at scala.tools.nsc.doc.ScaladocAnalyzer$ScaladocTyper$class.typedDocDef(ScaladocAnalyzer.scala:52)
+	at org.scalaide.core.internal.compiler.InteractiveScaladocAnalyzer$$anon$1.typedDocDef(ScaladocGlobalCompatibilityTrait.scala:10)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedOutsidePatternMode$1(Typers.scala:5334)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInAnyMode$1(Typers.scala:5352)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5359)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5395)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedInternal(Typers.scala:5422)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5369)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5373)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5451)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedStat$1(Typers.scala:3047)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$65.apply(Typers.scala:3151)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$65.apply(Typers.scala:3151)
+	at scala.collection.immutable.List.loop$1(List.scala:173)
+	at scala.collection.immutable.List.mapConserve(List.scala:189)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3151)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5014)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5311)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5358)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5395)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedInternal(Typers.scala:5422)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5369)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5373)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5447)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$$anon$3.apply(Analyzer.scala:102)
+	at scala.tools.nsc.Global$GlobalPhase$$anonfun$applyPhase$1.apply$mcV$sp(Global.scala:440)
+	at scala.tools.nsc.Global$GlobalPhase.withCurrentUnit(Global.scala:431)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:440)
+	at scala.tools.nsc.interactive.Global$TyperRun$$anonfun$applyPhase$1.apply(Global.scala:1225)
+	at scala.tools.nsc.interactive.Global$TyperRun$$anonfun$applyPhase$1.apply(Global.scala:1225)
+	at scala.reflect.internal.SymbolTable.enteringPhase(SymbolTable.scala:235)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1225)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1218)
+	at scala.tools.nsc.interactive.Global.scala$tools$nsc$interactive$Global$$typeCheck(Global.scala:668)
+	at scala.tools.nsc.interactive.Global$$anonfun$backgroundCompile$5$$anonfun$apply$8.apply(Global.scala:583)
+	at scala.tools.nsc.interactive.Global$$anonfun$backgroundCompile$5.apply(Global.scala:579)
+	at scala.tools.nsc.interactive.Global$$anonfun$backgroundCompile$5.apply(Global.scala:579)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:778)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:777)
+	at scala.tools.nsc.interactive.Global.backgroundCompile(Global.scala:579)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:25)
+
+!ENTRY org.scala-ide.sdt.core 1 0 2015-11-04 16:33:45.624
+!MESSAGE Timeout while resolving hyperlink in C:\Users\callum\workspace\WarehouseOrderTrackingApplicationScala\WarehouseOrderTrackingApplication\src\main\scala\WarehouseOrderTrackingapplication.scala at: offset: 206, length: 0
