@@ -59,8 +59,6 @@ class StockDeliveryOrder {
            supplierMethodOfContact, supplierAddress, orderStatus 
             FROM stockdeliveryorders"""
         val rs : ResultSet = stmt.executeQuery(sql1)
-        
-        
     }
   }
 }

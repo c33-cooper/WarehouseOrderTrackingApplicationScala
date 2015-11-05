@@ -1,6 +1,4 @@
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+
 
 /**
  * @author callum
@@ -53,13 +51,10 @@ class StockDeliveryOrder {
     // Establish the stock delivery orders
     try{
         // Create the SQL statements
-        val stmt : Statement = db.conn.createStatement()
         val sql1 : String = """SELECT idstockdeliveryorders, stockDeliveryDateReceived,
            supplierName, supplierTelephoneNumber, supplierEmail,
            supplierMethodOfContact, supplierAddress, orderStatus 
             FROM stockdeliveryorders"""
-        val rs : ResultSet = stmt.executeQuery(sql1)
-        
         
     }
   }

@@ -1,6 +1,4 @@
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+
 
 /**
  * @author callum
@@ -58,9 +56,7 @@ class StockDeliveryOrder {
            supplierName, supplierTelephoneNumber, supplierEmail,
            supplierMethodOfContact, supplierAddress, orderStatus 
             FROM stockdeliveryorders"""
-        val rs : ResultSet = stmt.executeQuery(sql1)
-        
-        
+        val rs : ResultSet = db.
     }
   }
 }
