@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;WarehouseOrderTrackingApplication/src/main/scala/WarehouseOrderTrackingapplication.scala&apos; to &apos;WarehouseOrderTrackingApplication.scala&apos;" description="Rename resource &apos;WarehouseOrderTrackingapplication.scala&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/scala/WarehouseOrderTrackingapplication.scala" name="WarehouseOrderTrackingApplication.scala" stamp="1446724557280" updateReferences="true"/>
+</session>

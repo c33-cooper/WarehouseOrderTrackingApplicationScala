@@ -1,0 +1,14 @@
+
+
+/**
+ * @author callum
+ */
+class StockDeliveryOrder {
+  
+  
+  
+  // Class constructor
+  def StockDeliveryorder() {
+    
+  }
+}

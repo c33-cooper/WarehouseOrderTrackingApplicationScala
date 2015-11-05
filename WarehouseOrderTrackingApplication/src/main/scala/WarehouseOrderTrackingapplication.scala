@@ -3,20 +3,20 @@
 /**
  * @author callum
  */
-object WarehouseOrderTrackingapplication {
+object WarehouseOrderTrackingApplication {
   
   def main(args: Array[String]) {
     
     // Instantiate the application class and run
-    val app = new WarehouseOrderTrackingapplication
+    val app = new WarehouseOrderTrackingApplication
     app runApp
   } 
 }
 
-class WarehouseOrderTrackingapplication {
+class WarehouseOrderTrackingApplication {
   
   // Class Constructor
-  def WarehouseOrderTrackingapplication() {
+  def WarehouseOrderTrackingApplication() {
     
   }
   
@@ -81,9 +81,10 @@ class WarehouseOrderTrackingapplication {
     
     // Match for user functions
     // and based outcomes.
-    match {
+    programFunctions match {
       case "1" => println("Stock Delivery Orders")
       case "2" => println("New Stock Delivery Order")
+      case "8" => System.exit(1);
       case _ => println("Nothing chosen..")
     }
   }

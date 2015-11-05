@@ -1,0 +1,23 @@
+
+
+/**
+ * @author callum
+ */
+class StockDeliveryOrder {
+  
+  // StockDeliveryOrder attributes
+  var stockDeliveryOrderID: String;
+  var stockDeliveryDateReceived: String;
+  var supplierName : String;
+  var supplierTelephoneNumber: String;
+  var supplierEmail: String;
+  var String _supplierMethodOfContact;
+  var String _supplierAddress;
+  var String stockDeliveryOrderSelector;
+  var String orderStatus;
+  
+  // Class constructor
+  def StockDeliveryorder() {
+    
+  }
+}
