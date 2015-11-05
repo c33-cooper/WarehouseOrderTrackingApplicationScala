@@ -15,16 +15,12 @@ object WarehouseOrderTrackingApplication {
 
 class WarehouseOrderTrackingApplication {
   
-  /**
-   * Class Constructor
-   */
+  // Class Constructor
   def WarehouseOrderTrackingApplication() {
     
   }
   
-  /**
-   * Run the app
-   */
+  // Run the app
   def runApp() {
     
     // Prompt the user for login details
@@ -39,9 +35,7 @@ class WarehouseOrderTrackingApplication {
     }
   }
   
-  /**
-   * Display the application title
-   */
+  // Display the application title
   def displayApplicationTitle() {
     
     // Print application title
@@ -50,9 +44,7 @@ class WarehouseOrderTrackingApplication {
     println("*******************************************\n")
   }
   
-  /**
-   * Prompt user for login details
-   */
+  // Prompt user for login details
   def promptUserForLoginDetails() {
     
     // Display the application title
@@ -69,9 +61,7 @@ class WarehouseOrderTrackingApplication {
     var password = readLine
   }
   
-  /**
-   * Prompt user for program order choice
-   */
+  // Prompt user for program order choice
   def promptUserForProgramOptions() {
     
     // Program attributes

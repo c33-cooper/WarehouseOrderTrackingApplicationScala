@@ -7,20 +7,14 @@ import java.sql.Statement;
  */
 class StockDeliveryOrder(app : WarehouseOrderTrackingApplication, db : Database) {
   
-  /**
-   * Overloaded constructor
-   */
+  // Overloaded constructor
   def this() = this(new WarehouseOrderTrackingApplication, new Database)
   
-  /**
-   * Default Class constructor
-   */
+  // Class constructor
   def StockDeliveryorder() {
   }
   
-  /**
-   * Overload establish order
-   */
+  // Overload establish order
   def establishStockDeliveryOrdersFromDatabase() {
     
     // Establish the stock delivery orders
@@ -45,8 +39,6 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication, db : Database)
           val supplierMethodOfContact = rs.getString("supplierMethodOfContact")
           val supplierAddress = rs.getString("supplierAddress")
           val orderStatus = rs.getString("orderStatus")
-          
-          // Print orders
         }
     }
   }

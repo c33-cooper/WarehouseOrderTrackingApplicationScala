@@ -12,15 +12,11 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication, db : Database)
    */
   def this() = this(new WarehouseOrderTrackingApplication, new Database)
   
-  /**
-   * Default Class constructor
-   */
+  // Class constructor
   def StockDeliveryorder() {
   }
   
-  /**
-   * Overload establish order
-   */
+  // Overload establish order
   def establishStockDeliveryOrdersFromDatabase() {
     
     // Establish the stock delivery orders

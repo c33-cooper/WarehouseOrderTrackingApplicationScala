@@ -18,9 +18,7 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication, db : Database)
   def StockDeliveryorder() {
   }
   
-  /**
-   * Overload establish order
-   */
+  // Overload establish order
   def establishStockDeliveryOrdersFromDatabase() {
     
     // Establish the stock delivery orders

@@ -20,9 +20,7 @@ class Database() {
   // Connection attribute
   var conn : Connection = null
   
-  /**
-   * Class constructor
-   */
+  // Class constructor
   def Database {
     
     // Initialise the database connection

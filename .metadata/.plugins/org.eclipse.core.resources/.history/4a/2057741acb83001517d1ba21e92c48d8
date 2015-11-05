@@ -7,9 +7,7 @@ import java.sql.SQLException
  */
 class Database() {
   
-  /**
-   * Database attributes
-   */
+  // Database attributes
   val JDBC_DRIVER : String = "com.mysql.jdbc.Driver"
   val DB_URL : String = "jdbc:mysql://localhost:3306/warehousedatabase"
   
@@ -20,9 +18,7 @@ class Database() {
   // Connection attribute
   var conn : Connection = null
   
-  /**
-   * Class constructor
-   */
+  // Class constructor
   def Database {
     
     // Initialise the database connection

@@ -69,9 +69,7 @@ class WarehouseOrderTrackingApplication {
     var password = readLine
   }
   
-  /**
-   * Prompt user for program order choice
-   */
+  // Prompt user for program order choice
   def promptUserForProgramOptions() {
     
     // Program attributes
