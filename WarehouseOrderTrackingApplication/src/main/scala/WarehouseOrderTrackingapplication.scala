@@ -16,7 +16,7 @@ object WarehouseOrderTrackingApplication {
 class WarehouseOrderTrackingApplication {
   
   /**
-   * Class Constructor
+   * Default Class Constructor
    */
   def WarehouseOrderTrackingApplication() {
   }
@@ -90,6 +90,7 @@ class WarehouseOrderTrackingApplication {
     
     // Class instances
     val stockDeliveryOrder = new StockDeliveryOrder(this)
+    val order = new Order(this)
     
     // Match for user functions
     // and based outcomes.
@@ -99,7 +100,16 @@ class WarehouseOrderTrackingApplication {
                   stockDeliveryOrder establishStockDeliveryOrdersFromDatabase
                   
       case "2" => println("New Stock Delivery Order")
+      
+      case "3" => println("\nORDER LIST...")
+                  // Call order list from database
+                  order establishOrdersFromDatabase
+                  
+                  // Prompt user for order selector option
+                  order selectOrderToView
+      
       case "8" => System.exit(1);
+      
       case _ => println("Nothing chosen..")
     }
   }

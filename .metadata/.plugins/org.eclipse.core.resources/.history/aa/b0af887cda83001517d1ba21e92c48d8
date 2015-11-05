@@ -1,0 +1,13 @@
+
+
+/**
+ * @author callum
+ */
+class OrderLine(app : WarehouseOrderTrackingApplication) {
+  
+  /**
+   * Overloaded Constructor
+   */
+  def this() = this(new WarehouseOrderTrackingApplication)
+  
+}

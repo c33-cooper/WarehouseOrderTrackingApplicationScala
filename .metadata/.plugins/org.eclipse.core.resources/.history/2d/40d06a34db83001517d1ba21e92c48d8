@@ -1,0 +1,30 @@
+
+
+/**
+ * @author callum
+ */
+class OrderLine(app : WarehouseOrderTrackingApplication) {
+  
+  /**
+   * Overloaded Constructor
+   */
+  def this() = this(new WarehouseOrderTrackingApplication)
+  
+  /**
+   * Default Class Constructor
+   */
+  def OrderLine(){
+  }
+  
+  /**
+   * Establish the order line from database
+   */
+  def establishOrderLine(orderID : String) {
+    
+    // Establish the order lines 
+    try {
+      
+    }
+  }
+  
+}

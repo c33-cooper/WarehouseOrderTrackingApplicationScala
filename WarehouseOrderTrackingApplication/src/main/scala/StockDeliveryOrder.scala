@@ -25,7 +25,7 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication) {
     
     // Create database instance & connection
      val db = new Database
-     db.createConnection
+     db createConnection
     
     // Establish the stock delivery orders
     try{
@@ -41,14 +41,14 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication) {
         while (rs next) {
           
           // Store the database elements into attributes
-          val stockDeliveryOrderID = rs.getString("idstockdeliveryorders")
-          val stockDeliveryDateReceived = rs.getString("stockDeliveryDateReceived")
-          val supplierName = rs.getString("supplierName")
-          val supplierTelephoneNumber = rs.getString("supplierTelephoneNumber")
-          val supplierEmail = rs.getString("supplierEmail")
-          val supplierMethodOfContact = rs.getString("supplierMethodOfContact")
-          val supplierAddress = rs.getString("supplierAddress")
-          val orderStatus = rs.getString("orderStatus")
+          val stockDeliveryOrderID : String = rs.getString("idstockdeliveryorders")
+          val stockDeliveryDateReceived : String = rs.getString("stockDeliveryDateReceived")
+          val supplierName : String = rs.getString("supplierName")
+          val supplierTelephoneNumber : String = rs.getString("supplierTelephoneNumber")
+          val supplierEmail : String = rs.getString("supplierEmail")
+          val supplierMethodOfContact : String = rs.getString("supplierMethodOfContact")
+          val supplierAddress : String = rs.getString("supplierAddress")
+          val orderStatus : String = rs.getString("orderStatus")
           
           // Print orders
           println("\nStock Delivery Order ID: " + stockDeliveryOrderID
