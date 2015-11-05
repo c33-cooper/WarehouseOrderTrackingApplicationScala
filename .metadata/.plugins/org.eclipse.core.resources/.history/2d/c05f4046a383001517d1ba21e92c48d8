@@ -1,0 +1,14 @@
+
+
+/**
+ * @author callum
+ */
+class Database() {
+  
+  var JDBC_DRIVER : String = "com.mysql.jdbc.Driver"
+  
+  // Class constructor
+  def Database {
+    
+  }
+}

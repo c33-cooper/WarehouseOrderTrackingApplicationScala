@@ -1,0 +1,18 @@
+
+
+/**
+ * @author callum
+ */
+class Database() {
+  
+  // Class constructor
+  def Database {
+    
+  }
+  
+  // JDBC accessor
+  def getJDBC_DRIVER() {
+    
+  }
+  
+}

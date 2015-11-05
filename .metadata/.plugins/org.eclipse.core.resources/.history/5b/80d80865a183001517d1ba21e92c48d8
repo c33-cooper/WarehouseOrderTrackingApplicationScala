@@ -1,0 +1,13 @@
+
+
+/**
+ * @author callum
+ */
+class Database {
+  
+  // Class constructor
+  def Database {
+    
+  }
+  
+}

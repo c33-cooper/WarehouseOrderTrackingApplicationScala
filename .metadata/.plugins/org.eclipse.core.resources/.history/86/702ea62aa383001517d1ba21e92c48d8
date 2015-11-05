@@ -1,0 +1,19 @@
+
+
+/**
+ * @author callum
+ */
+class Database() {
+  
+  var JDBC_DRIVER : String = "com.mysql.jdbc.Driver"
+  
+  // Class constructor
+  def Database {
+    
+  }
+  
+  // JDBC accessor
+//  def getJDBC_DRIVER(): String{
+////    JDBC_DRIVER
+//  }
+}
