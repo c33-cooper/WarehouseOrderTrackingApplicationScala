@@ -54,13 +54,14 @@ class StockDeliveryOrder {
           
           // Store the database elements into attributes
           val stockDeliveryOrderID = rs.getString("idstockdeliveryorders")
-          val stockDeliveryDateReceived = rs.getString("stockDeliveryDateReceived")
-          val supplierName = rs.getString("supplierName")
-          val supplierTelephoneNumber = rs.getString("supplierTelephoneNumber")
-          val supplierEmail = rs.getString("supplierEmail")
-          val supplierMethodOfContact = rs.getString("supplierMethodOfContact")
-          val supplierAddress = rs.getString("supplierAddress")
-          val orderStatus = rs.getString("orderStatus")
+          val stockDeliveryDateReceived = rs.getString("stockDeliveryDateReceived");
+          val supplierName = rs.getString("supplierName");
+          val supplierTelephoneNumber = rs.getString("supplierTelephoneNumber");
+          val supplierEmail = rs.getString("supplierEmail");
+          val supplierMethodOfContact = rs.getString("supplierMethodOfContact");
+          val supplierAddress = rs.getString("supplierAddress");
+          val stockDeliveryOrderSelector = rs.getString("orderStatus");
+          val orderStatus = null
         }
     }
   }

@@ -9,7 +9,7 @@ class Database() {
   
   // Database attributes
   val JDBC_DRIVER : String = "com.mysql.jdbc.Driver"
-  val DB_URL : String = "jdbc:mysql://localhost:3306/warehousedatabase"
+  val DB_URL : String = "jdbc:mysql://10.50.15.50:3306/warehousedatabase"
   
   // Database user name attributes
   val USER : String = "root"

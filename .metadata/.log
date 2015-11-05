@@ -853,3 +853,6 @@ java.lang.NullPointerException
 	at scala.tools.nsc.interactive.Global.scala$tools$nsc$interactive$Global$$parseAndEnter(Global.scala:656)
 	at scala.tools.nsc.interactive.Global.backgroundCompile(Global.scala:562)
 	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:25)
+
+!ENTRY org.scala-ide.sdt.core 1 0 2015-11-05 12:36:45.218
+!MESSAGE Timeout while resolving hyperlink in C:\Users\callum\workspace\WarehouseOrderTrackingApplicationScala\WarehouseOrderTrackingApplication\src\main\scala\StockDeliveryOrder.scala at: offset: 1991, length: 0

@@ -34,6 +34,17 @@ class StockDeliveryOrder {
   
   // Class constructor
   def StockDeliveryorder() {
+    
+    // Initialise attributes
+    var stockDeliveryOrderID = null
+    var stockDeliveryDateReceived = null
+    var supplierName = null
+    var supplierTelephoneNumber = null
+    var supplierEmail = null
+    var supplierMethodOfContact = null
+    var supplierAddress = null
+    var stockDeliveryOrderSelector = null
+    var orderStatus = null
   }
   
   // Overload establish order
@@ -53,14 +64,7 @@ class StockDeliveryOrder {
         while (rs next) {
           
           // Store the database elements into attributes
-          val stockDeliveryOrderID = rs.getString("idstockdeliveryorders")
-          val stockDeliveryDateReceived = rs.getString("stockDeliveryDateReceived")
-          val supplierName = rs.getString("supplierName")
-          val supplierTelephoneNumber = rs.getString("supplierTelephoneNumber")
-          val supplierEmail = rs.getString("supplierEmail")
-          val supplierMethodOfContact = rs.getString("supplierMethodOfContact")
-          val supplierAddress = rs.getString("supplierAddress")
-          val orderStatus = rs.getString("orderStatus")
+          this.stockDeliveryOrderID = rs.getString("idstockdeliveryorders")
         }
     }
   }
