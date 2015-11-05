@@ -19,7 +19,6 @@ class WarehouseOrderTrackingApplication {
    * Class Constructor
    */
   def WarehouseOrderTrackingApplication() {
-    
   }
   
   /**
@@ -89,10 +88,16 @@ class WarehouseOrderTrackingApplication {
     println("8: ***EXIT THE PROGRAM***");
     programFunctions = readLine
     
+    // Class instances
+    val stockDeliveryOrder = new StockDeliveryOrder(this)
+    
     // Match for user functions
     // and based outcomes.
     programFunctions match {
-      case "1" => println("Stock Delivery Orders")
+      case "1" => println("\nSTOCK DELIVERY ORDER LIST...")
+                  // Call stock delivery order list from database
+                  stockDeliveryOrder establishStockDeliveryOrdersFromDatabase
+                  
       case "2" => println("New Stock Delivery Order")
       case "8" => System.exit(1);
       case _ => println("Nothing chosen..")

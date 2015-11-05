@@ -5,12 +5,12 @@ import java.sql.Statement;
 /**
  * @author callum
  */
-class StockDeliveryOrder(app : WarehouseOrderTrackingApplication, db : Database) {
-  
+class StockDeliveryOrder(app : WarehouseOrderTrackingApplication) {
+ 
   /**
    * Overloaded constructor
    */
-  def this() = this(new WarehouseOrderTrackingApplication, new Database)
+  def this() = this(new WarehouseOrderTrackingApplication)
   
   /**
    * Default Class constructor
@@ -21,13 +21,17 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication, db : Database)
   /**
    * Overload establish order
    */
-  def establishStockDeliveryOrdersFromDatabase() {
+  def establishStockDeliveryOrdersFromDatabase {
+    
+    // Create database instance & connection
+     val db = new Database
+     db.createConnection
     
     // Establish the stock delivery orders
     try{
         // Create the SQL statements
-        val stmt : Statement = db.conn.createStatement()
-        val sql1 : String = """SELECT idstockdeliveryorders, stockDeliveryDateReceived,
+        val stmt : Statement = db.getDBConnection().createStatement()
+        val sql1 = """SELECT idstockdeliveryorders, stockDeliveryDateReceived,
            supplierName, supplierTelephoneNumber, supplierEmail,
            supplierMethodOfContact, supplierAddress, orderStatus 
             FROM stockdeliveryorders"""
@@ -47,7 +51,20 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication, db : Database)
           val orderStatus = rs.getString("orderStatus")
           
           // Print orders
+          println("\nStock Delivery Order ID: " + stockDeliveryOrderID
+            + "\nStock Delivery Date Received: " + stockDeliveryDateReceived
+            + "\nSupplier Name: " + supplierName
+            + "\nSupplier Telephone Number: " + supplierTelephoneNumber
+            + "\nSupplier Email: " + supplierEmail
+            + "\nSupplier Method Of Contact: " + supplierMethodOfContact
+            + "\nSupplier Address: " + supplierAddress
+            + "\nOrder Status: " + orderStatus);
         }
+          // close the connection
+          rs close
+    }
+      catch {
+        case e => e.printStackTrace
     }
   }
 }

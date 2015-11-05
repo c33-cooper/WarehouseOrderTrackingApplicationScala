@@ -856,3 +856,6 @@ java.lang.NullPointerException
 
 !ENTRY org.scala-ide.sdt.core 1 0 2015-11-05 12:36:45.218
 !MESSAGE Timeout while resolving hyperlink in C:\Users\callum\workspace\WarehouseOrderTrackingApplicationScala\WarehouseOrderTrackingApplication\src\main\scala\StockDeliveryOrder.scala at: offset: 1991, length: 0
+
+!ENTRY org.scala-ide.sdt.core 1 0 2015-11-05 15:35:09.504
+!MESSAGE Timeout while resolving hyperlink in C:\Users\callum\workspace\WarehouseOrderTrackingApplicationScala\WarehouseOrderTrackingApplication\src\main\scala\WarehouseOrderTrackingApplication.scala at: offset: 1807, length: 0

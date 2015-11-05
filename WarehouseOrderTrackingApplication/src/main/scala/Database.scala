@@ -10,12 +10,12 @@ class Database() {
   /**
    * Database attributes
    */
-  val JDBC_DRIVER : String = "com.mysql.jdbc.Driver"
-  val DB_URL : String = "jdbc:mysql://localhost:3306/warehousedatabase"
+  val JDBC_DRIVER = "com.mysql.jdbc.Driver"
+  val DB_URL = "jdbc:mysql://localhost:3306/warehousedatabase"
   
   // Database user name attributes
-  val USER : String = "root"
-  val PASS : String = "password"
+  val USER = "root"
+  val PASS = "password"
   
   // Connection attribute
   var conn : Connection = null
@@ -23,7 +23,7 @@ class Database() {
   /**
    * Class constructor
    */
-  def Database {
+  def createConnection {
     
     // Initialise the database connection
     try{
@@ -31,7 +31,14 @@ class Database() {
         Class.forName(JDBC_DRIVER)
         conn = DriverManager.getConnection(DB_URL, USER, PASS)
     } catch {
-          case e => e.printStackTrace
+          case e : Throwable => e.printStackTrace
     }
+  }
+  
+  /**
+   * Return the connection of the database
+   */
+  def getDBConnection(): Connection = {
+    conn
   }
 }
