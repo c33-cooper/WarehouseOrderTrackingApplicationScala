@@ -4433,3 +4433,10 @@ java.lang.NullPointerException
 2015-11-06 15:22:08,683  WARN [Worker-45] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
 2015-11-06 15:22:09,010  WARN [Worker-45] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
 2015-11-06 15:22:09,010  WARN [Worker-45] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-06 16:09:44,912  WARN [main] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-06 16:09:44,912  WARN [main] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-06 16:09:44,912  WARN [main] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-06 16:09:44,912  WARN [main] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-06 16:09:44,990 ERROR [main] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-11-06 16:09:44,990 ERROR [main] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-11-06 16:09:44,990 ERROR [main] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
