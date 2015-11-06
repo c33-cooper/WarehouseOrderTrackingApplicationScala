@@ -141,14 +141,7 @@ class Order(app : WarehouseOrderTrackingApplication) {
        // Run check to see if order wants to be checked out
        if (orderStatusChoice equalsIgnoreCase("CHECKOUT")) {
          // Checkout the order
-         updateCheckOutOrdersFromDatabase
          
-         // Check out the order from the database
-         println("Order checked out...")
-       }
-       else {
-             // Display default message
-             println("No orders have been checked out...")
        }
      }
      
@@ -170,9 +163,6 @@ class Order(app : WarehouseOrderTrackingApplication) {
              // SQL attributes
              val sql3 : String = "UPDATE orders SET orderStatus = 'CHECKED OUT' WHERE idorders = " + orderSelector;
              stmt.executeUpdate(sql3)
-       }
-       catch {
-         case e : Throwable => e.printStackTrace
        }
      }
   }

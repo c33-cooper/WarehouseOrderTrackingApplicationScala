@@ -6,9 +6,6 @@ import java.sql.ResultSet
  */
 class Order(app : WarehouseOrderTrackingApplication) {
   
-  // Attribute
-  var orderSelector : String = _
-  
   /**
    * Overload constructor
    */
@@ -81,7 +78,7 @@ class Order(app : WarehouseOrderTrackingApplication) {
       
       // Prompt the user for the order to select and view
       println("ENTER ORDER TO SELECT: ")
-      orderSelector = readLine
+      var orderSelector : String = readLine
       
       // Run check of order select against the order ID
       println("\nCURRENT SELECTED ORDER...")
@@ -125,7 +122,7 @@ class Order(app : WarehouseOrderTrackingApplication) {
             rsSelectedOrder close
       }
        catch {
-        case e : Throwable => e.printStackTrace
+        case e => e.printStackTrace
        }
     }
   
@@ -141,38 +138,27 @@ class Order(app : WarehouseOrderTrackingApplication) {
        // Run check to see if order wants to be checked out
        if (orderStatusChoice equalsIgnoreCase("CHECKOUT")) {
          // Checkout the order
-         updateCheckOutOrdersFromDatabase
          
-         // Check out the order from the database
-         println("Order checked out...")
-       }
-       else {
-             // Display default message
-             println("No orders have been checked out...")
        }
      }
      
      /**
       * Update checked out orders from the database
       */
-     def updateCheckOutOrdersFromDatabase() {
-       
-       // Create database instance & connection
-       val db = new Database
-       db createConnection
-       
-       // Connect to the order database and update
-       // the checked out orders
-       try {
-             // Create a new connection to the database
-             val stmt : Statement = db.getDBConnection().createStatement()
-             
-             // SQL attributes
-             val sql3 : String = "UPDATE orders SET orderStatus = 'CHECKED OUT' WHERE idorders = " + orderSelector;
-             stmt.executeUpdate(sql3)
-       }
-       catch {
-         case e : Throwable => e.printStackTrace
-       }
-     }
+//     def updateCheckOutOrdersFromDatabase {
+//       
+//       // Create database instance & connection
+//       val db = new Database
+//       db createConnection
+//       
+//       // Connect to the order database and update
+//       // the checked out orders
+//       try {
+//             // Create a new connection to the database
+//             val stmt : Statement = db.getDBConnection().createStatement()
+//             
+//             // SQL attributes
+//             val sql3 : String = "UPDATE orders SET orderStatus = 'CHECKED OUT' WHERE idorders = " + orderSelector;
+//       }
+//     }
   }

@@ -142,13 +142,6 @@ class Order(app : WarehouseOrderTrackingApplication) {
        if (orderStatusChoice equalsIgnoreCase("CHECKOUT")) {
          // Checkout the order
          updateCheckOutOrdersFromDatabase
-         
-         // Check out the order from the database
-         println("Order checked out...")
-       }
-       else {
-             // Display default message
-             println("No orders have been checked out...")
        }
      }
      

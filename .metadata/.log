@@ -1046,3 +1046,6 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.scala-ide.sdt.core 1 0 2015-11-06 10:40:46.983
+!MESSAGE Timeout while resolving hyperlink in C:\Users\callum\workspace\WarehouseOrderTrackingApplicationScala\WarehouseOrderTrackingApplication\src\main\scala\Order.scala at: offset: 5396, length: 0
