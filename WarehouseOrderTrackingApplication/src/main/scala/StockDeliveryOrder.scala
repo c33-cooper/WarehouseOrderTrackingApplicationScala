@@ -7,6 +7,9 @@ import java.sql.Statement;
  */
 class StockDeliveryOrder(app : WarehouseOrderTrackingApplication) {
  
+  // Attributes
+  var stockDeliveryOrderSelector : String = _
+  
   /**
    * Overloaded constructor
    */
@@ -26,6 +29,9 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication) {
     // Create database instance & connection
      val db = new Database
      db createConnection
+     
+     // Re-initialise stock delivery order line instance
+      val stockDeliveryOrderLine : StockDeliveryOrderLine = new StockDeliveryOrderLine
     
     // Establish the stock delivery orders
     try{
@@ -58,13 +64,84 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication) {
             + "\nSupplier Email: " + supplierEmail
             + "\nSupplier Method Of Contact: " + supplierMethodOfContact
             + "\nSupplier Address: " + supplierAddress
-            + "\nOrder Status: " + orderStatus);
+            + "\nOrder Status: " + orderStatus)
+            
+            // List stock delivery order lines
+            stockDeliveryOrderLine establishStockDeliveryOrderLine(stockDeliveryOrderSelector);
         }
           // close the connection
           rs close
     }
       catch {
         case e => e.printStackTrace
+    }
+  }
+  
+  /**
+   * Prompt user to select stock delivery order
+   * to view.
+   */
+  def selectStockDeliveryOrderToView
+  {
+    // create a new connection to the database 
+     val db = new Database
+     db createConnection
+    
+    // Re-initialise stock delivery order line instance.
+    val stockDeliveryOrderLine : StockDeliveryOrderLine = new StockDeliveryOrderLine
+    
+    // Prompt the user for the stock delivery order and view
+    println("\nENTER STOCK DELIVERY ORDER TO SELECT: ")
+    stockDeliveryOrderSelector = readLine
+    
+    // Run check of stock delivery order selected against the order ID
+    println("\nCURRENT SELECTED STOCK DELIVERY ORDER...")
+    
+    try {
+      // Create a new connection to the database
+      val stmt : Statement = db.getDBConnection().createStatement()
+      
+      // SQL Attributes
+      val sql2 : String = """SELECT idstockdeliveryorders, stockDeliveryDateReceived,
+            supplierName, supplierTelephoneNumber, supplierEmail,
+           supplierMethodOfContact, supplierAddress, orderStatus 
+            FROM stockdeliveryorders WHERE idstockdeliveryorders = """ + stockDeliveryOrderSelector
+      
+      // Log database into result set
+      val rsSelectedStockDeliveryOrder : ResultSet = stmt.executeQuery(sql2)
+      
+      // Loop through the selected orders
+      while (rsSelectedStockDeliveryOrder next) {
+        
+        // Store database elements into attributes
+        val stockDeliveryOrderID : String = rsSelectedStockDeliveryOrder.getString("idstockdeliveryorders")
+        val stockDeliveryDateReceived : String = rsSelectedStockDeliveryOrder.getString("stockDeliveryDateReceived")
+        val supplierName : String = rsSelectedStockDeliveryOrder.getString("supplierName")
+        val supplierTelephoneNumber : String = rsSelectedStockDeliveryOrder.getString("supplierTelephoneNumber")
+        val supplierEmail : String = rsSelectedStockDeliveryOrder.getString("supplierEmail")
+        val supplierMethodOfContact : String = rsSelectedStockDeliveryOrder.getString("supplierMethodOfContact")
+        val supplierAddress : String = rsSelectedStockDeliveryOrder.getString("supplierAddress")
+        val orderStatus : String = rsSelectedStockDeliveryOrder.getString("orderStatus")
+        
+        // Print orders
+        println("Stock Delivery Order ID: " + stockDeliveryOrderID
+            + "\nStock Delivery Date Received: " + stockDeliveryDateReceived
+            + "\nSupplier Name: " + supplierName
+            + "\nSupplier Telephone Number: " + supplierTelephoneNumber
+            + "\nSupplier Email: " + supplierEmail
+            + "\nSupplier Method Of Contact: " + supplierMethodOfContact
+            + "\nSupplier Address: " + supplierAddress
+            + "\nOrder Status: " + orderStatus + "\n")
+        
+         // List stock delivery order lines
+         println("Stock Delivery Order Lines: ")
+         stockDeliveryOrderLine establishStockDeliveryOrderLine(stockDeliveryOrderSelector)
+      }
+      // Close the connection
+      rsSelectedStockDeliveryOrder close
+    }
+    catch {
+      case e : Throwable => e.printStackTrace
     }
   }
 }

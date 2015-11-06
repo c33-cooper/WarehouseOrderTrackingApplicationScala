@@ -1,0 +1,43 @@
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+/**
+ * @author callum
+ */
+class StockDeliveryOrderLine(app: WarehouseOrderTrackingApplication) {
+  
+   /**
+   * Overloaded constructor
+   */
+  def this() = this(new WarehouseOrderTrackingApplication)
+  
+  /**
+   * Default Class constructor
+   */
+  def StockDeliveryOrderLine {
+  }
+  
+  /**
+   * establish the stock delivery order line from database
+   */
+  def establishStockDeliveryOrderLine(orderID : String) {
+    
+    // Establish the order lines
+    try {
+      // Re-initialise the stock delivery order line
+      // database every new order line
+      val db : Database = new Database;
+      
+      // Create the SQL attributes
+      val stmt : Statement = db.getDBConnection().createStatement()
+      
+      // SQL attribute
+      val sql1 : String = """SELECT idstockdeliveryorderline, idstockdeliveryorders, productName,
+          productQuantity FROM stockdeliveryorderline, products WHERE stockdeliveryorderline.idproducts = products.idproducts
+          AND idstockdeliveryorders = """ + orderID;
+      val rs : ResultSet = stmt.executeQuery(sql1)
+    }
+    
+  }
+}

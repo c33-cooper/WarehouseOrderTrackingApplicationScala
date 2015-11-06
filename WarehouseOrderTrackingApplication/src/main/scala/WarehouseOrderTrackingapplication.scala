@@ -99,7 +99,13 @@ class WarehouseOrderTrackingApplication {
                   // Call stock delivery order list from database
                   stockDeliveryOrder establishStockDeliveryOrdersFromDatabase
                   
-      case "2" => println("New Stock Delivery Order")
+                  // Prompt user for stock delivery order selector option
+                  stockDeliveryOrder selectStockDeliveryOrderToView
+                  
+                  // Update the status of the orders
+                  //stockDeliveryOrder updateTheStockDeliverOrderStatus
+                  
+      case "2" => 
       
       case "3" => println("\nORDER LIST...")
                   // Call order list from database
