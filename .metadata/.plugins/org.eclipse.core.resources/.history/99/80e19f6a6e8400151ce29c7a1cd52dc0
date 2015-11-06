@@ -109,7 +109,7 @@ class WarehouseOrderTrackingApplication {
                   order selectOrderToView
                   
                   // Update the status of the orders
-                   order updateTheOrderStatus
+                  // order updateTheOrderStatus
       
       case "8" => System.exit(1);
       

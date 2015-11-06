@@ -113,10 +113,6 @@ class Order(app : WarehouseOrderTrackingApplication) {
                                     + "\nOrder Total: " + orderTotals + " GBP"
                                     + "\nProduct Quantity: " + productQuantity
                                     + "\nOrder Status: " + orderStatus + "\n")
-                                    
-                // List order lines
-                println("Order Lines: ")
-                orderLine establishOrderLine(orderSelector)
             }
             // close the connection
             rsSelectedOrder close
@@ -130,9 +126,6 @@ class Order(app : WarehouseOrderTrackingApplication) {
      * Update the status of the order
      */
      def updateTheOrderStatus {
-       
-       // Ask user if they want to update the status of the order
-       println("\nType 'CHECKOUT' to check out order and update status...")
        
      }
   }

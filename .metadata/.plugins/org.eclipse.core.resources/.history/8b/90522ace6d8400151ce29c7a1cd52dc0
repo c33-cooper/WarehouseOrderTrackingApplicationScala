@@ -22,12 +22,15 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
    */
   def establishOrderLine(orderID : String) {
     
+    // Create database instance & connection
+     val db = new Database
+     db createConnection
+    
     // Establish the order lines 
     try {
           // Re-initialise the order line database 
           // every new order line
           val db = new Database
-          db createConnection
           
           // Create the SQL attributes
           val stmt : Statement = db.getDBConnection().createStatement()

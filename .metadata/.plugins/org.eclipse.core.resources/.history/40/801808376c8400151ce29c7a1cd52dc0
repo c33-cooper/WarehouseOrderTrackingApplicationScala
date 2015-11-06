@@ -116,7 +116,6 @@ class Order(app : WarehouseOrderTrackingApplication) {
                                     
                 // List order lines
                 println("Order Lines: ")
-                orderLine establishOrderLine(orderSelector)
             }
             // close the connection
             rsSelectedOrder close

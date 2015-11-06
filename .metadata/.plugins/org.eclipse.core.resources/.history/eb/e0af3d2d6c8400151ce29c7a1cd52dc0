@@ -113,10 +113,6 @@ class Order(app : WarehouseOrderTrackingApplication) {
                                     + "\nOrder Total: " + orderTotals + " GBP"
                                     + "\nProduct Quantity: " + productQuantity
                                     + "\nOrder Status: " + orderStatus + "\n")
-                                    
-                // List order lines
-                println("Order Lines: ")
-                orderLine establishOrderLine(orderSelector)
             }
             // close the connection
             rsSelectedOrder close

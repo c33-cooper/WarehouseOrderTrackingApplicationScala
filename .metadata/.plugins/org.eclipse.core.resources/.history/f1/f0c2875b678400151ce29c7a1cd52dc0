@@ -89,7 +89,7 @@ class Order(app : WarehouseOrderTrackingApplication) {
             
             // SQL attributes
             val sql2 : String = """SELECT idorders, orderDateCreated,
-            orderVerified, orderTotal, productQuantity, orderStatus 
+            orderVerified, orderTotal, productQuantity 
             FROM orders WHERE idorders = """ + orderSelector
             
             // log database into result set
@@ -111,12 +111,8 @@ class Order(app : WarehouseOrderTrackingApplication) {
                                     + "\nOrder Date Created: " + orderDateCreated
                                     + "\nOrder Verified: " + orderVerified
                                     + "\nOrder Total: " + orderTotals + " GBP"
-                                    + "\nProduct Quantity: " + productQuantity
-                                    + "\nOrder Status: " + orderStatus + "\n")
-                                    
-                // List order lines
-                println("Order Lines: ")
-                orderLine establishOrderLine(orderSelector)
+                                    + "\nProduct Quantity: " + productQuantity + "\n")
+                                    + "\nOrder Status: " + orderStatus 
             }
             // close the connection
             rsSelectedOrder close
@@ -125,14 +121,4 @@ class Order(app : WarehouseOrderTrackingApplication) {
         case e => e.printStackTrace
        }
     }
-  
-    /**
-     * Update the status of the order
-     */
-     def updateTheOrderStatus {
-       
-       // Ask user if they want to update the status of the order
-       println("\nType 'CHECKOUT' to check out order and update status...")
-       
-     }
   }
