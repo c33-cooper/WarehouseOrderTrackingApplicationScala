@@ -256,15 +256,7 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication) {
               // database instance every new order created
               val db : Database = new Database();
               db createConnection
-              
-              // Create the SQL attributes
-              val stmt : Statement = db.getDBConnection().createStatement();
-              
-              val sql2 : String = "INSERT INTO stockdeliveryorders VALUES ('" + stockDeliveryOrderID + "', '" + stockDeliveryDateReceived + "', '" + supplierName + "', '" + supplierTelephoneNumber + "', '" + supplierEmail + "', '" + supplierMethodOfContact + "', '" + supplierAddress + "', '" + orderStatusCreate + "')";
-              stmt executeUpdate(sql2)
         }
-        catch {
-          case e : Throwable => e.printStackTrace()
-        }
+    }
   }
 }

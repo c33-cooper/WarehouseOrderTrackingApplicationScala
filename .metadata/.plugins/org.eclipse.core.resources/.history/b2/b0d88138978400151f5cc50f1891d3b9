@@ -106,11 +106,6 @@ class WarehouseOrderTrackingApplication {
                   stockDeliveryOrder updateTheStockDeliverOrderStatus
                   
       case "2" => 
-                  // Call get stock delivery order details
-                  stockDeliveryOrder getNewStockDeliveryOrderDetails
-                  
-                  // Call create new order
-                  stockDeliveryOrder createNewDeliveryOrder
       
       case "3" => println("\nORDER LIST...")
                   // Call order list from database

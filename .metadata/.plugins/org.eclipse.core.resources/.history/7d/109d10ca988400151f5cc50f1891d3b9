@@ -110,7 +110,7 @@ class WarehouseOrderTrackingApplication {
                   stockDeliveryOrder getNewStockDeliveryOrderDetails
                   
                   // Call create new order
-                  stockDeliveryOrder createNewDeliveryOrder
+                  //stockDeliveryOrder createNewDeliveryOrder
       
       case "3" => println("\nORDER LIST...")
                   // Call order list from database

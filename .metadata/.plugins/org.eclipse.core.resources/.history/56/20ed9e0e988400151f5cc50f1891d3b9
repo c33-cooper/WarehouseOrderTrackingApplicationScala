@@ -18,7 +18,8 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication) {
   var supplierEmail : String = _
   var supplierMethodOfContact : String = _
   var supplierAddress : String = _
-  var orderStatusCreate : String = _
+  var stockDeliveryOrderSelectorCreate : String = _
+  var orderStatus : String = _
   
   /**
    * Overloaded constructor
@@ -216,55 +217,32 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication) {
     stockDeliveryOrderID = readLine
     
     // Get SDOrder date received
-    println("Stock Delivery Order Date Received: ")
-    stockDeliveryDateReceived = readLine()
+    System.out.println("Stock Delivery Order Date Received: ");
+    _stockDeliveryDateReceived = scan.nextLine();
     
     // Get SDOrder supplier name
-    println("Supplier Name: ")
-    supplierName = readLine()
+    System.out.println("Supplier Name: ");
+    _supplierName = scan.nextLine();
     
     // Get SDOrder supplier telephone number
-    println("Supplier Telephone Number: ")
-    supplierTelephoneNumber = readLine()
+    System.out.println("Supplier Telephone Number: ");
+    _supplierTelephoneNumber = scan.nextLine();
     
     // Get SDOrder supplier email
-    println("Supplier Email: ")
-    supplierEmail = readLine()
+    System.out.println("Supplier Email: ");
+    _supplierEmail = scan.nextLine();
     
     // Get SDOrder supplier method of contact
-    println("Supplier Method Of Contact: ")
-    supplierMethodOfContact = readLine()
+    System.out.println("Supplier Method Of Contact: ");
+    _supplierMethodOfContact = scan.nextLine();
     
     // Get SDOrder supplier address
-    println("Supplier Address: ")
-    supplierAddress = readLine()
+    System.out.println("Supplier Address: ");
+    _supplierAddress = scan.nextLine();
     
     // Get SDOrder supplier telephone number
-    println("Order Status: ")
-    orderStatusCreate = readLine()
+    System.out.println("Order Status: ");
+    orderStatus = scan.nextLine();
     
-  }
-  
-  /**
-   * Create a new stock delivery order
-   */
-  def createNewDeliveryOrder {
-    
-        // Establish the new delivery order
-        try {
-              // Re-initialise the stock delivery order
-              // database instance every new order created
-              val db : Database = new Database();
-              db createConnection
-              
-              // Create the SQL attributes
-              val stmt : Statement = db.getDBConnection().createStatement();
-              
-              val sql2 : String = "INSERT INTO stockdeliveryorders VALUES ('" + stockDeliveryOrderID + "', '" + stockDeliveryDateReceived + "', '" + supplierName + "', '" + supplierTelephoneNumber + "', '" + supplierEmail + "', '" + supplierMethodOfContact + "', '" + supplierAddress + "', '" + orderStatusCreate + "')";
-              stmt executeUpdate(sql2)
-        }
-        catch {
-          case e : Throwable => e.printStackTrace()
-        }
   }
 }

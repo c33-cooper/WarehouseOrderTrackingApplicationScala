@@ -10,16 +10,6 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication) {
   // Attributes
   var stockDeliveryOrderSelector : String = _
   
-  // StockDeliveryOrder attributes
-  var stockDeliveryOrderID : String = _
-  var stockDeliveryDateReceived : String = _
-  var supplierName : String = _
-  var supplierTelephoneNumber : String = _
-  var supplierEmail : String = _
-  var supplierMethodOfContact : String = _
-  var supplierAddress : String = _
-  var orderStatusCreate : String = _
-  
   /**
    * Overloaded constructor
    */
@@ -192,79 +182,7 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication) {
     // the checked out orders
     try {
           // Create a new connection to the database
-          val stmt : Statement = db.getDBConnection().createStatement()
-          
-          // SQL attributes
-          val sql3 : String = "UPDATE stockdeliveryorders SET orderStatus = 'CHECKED OUT' WHERE idstockdeliveryorders = " + stockDeliveryOrderSelector
-          stmt executeUpdate(sql3)
+          val stmt : Statement = db.getDBConnection().createStatement
     }
-     catch {
-       case e : Throwable => e.printStackTrace
-     }
-  }
-  
-  /**
-   * Create a new stock delivery order details
-   */
-  def getNewStockDeliveryOrderDetails {
-    
-    // Get user stock delivery order details
-    println("\nNEW STOCK DELIVERY ORDER FORM...")
-    
-    // Get SDOrder ID
-    println("Stock Delivery Order ID: ")
-    stockDeliveryOrderID = readLine
-    
-    // Get SDOrder date received
-    println("Stock Delivery Order Date Received: ")
-    stockDeliveryDateReceived = readLine()
-    
-    // Get SDOrder supplier name
-    println("Supplier Name: ")
-    supplierName = readLine()
-    
-    // Get SDOrder supplier telephone number
-    println("Supplier Telephone Number: ")
-    supplierTelephoneNumber = readLine()
-    
-    // Get SDOrder supplier email
-    println("Supplier Email: ")
-    supplierEmail = readLine()
-    
-    // Get SDOrder supplier method of contact
-    println("Supplier Method Of Contact: ")
-    supplierMethodOfContact = readLine()
-    
-    // Get SDOrder supplier address
-    println("Supplier Address: ")
-    supplierAddress = readLine()
-    
-    // Get SDOrder supplier telephone number
-    println("Order Status: ")
-    orderStatusCreate = readLine()
-    
-  }
-  
-  /**
-   * Create a new stock delivery order
-   */
-  def createNewDeliveryOrder {
-    
-        // Establish the new delivery order
-        try {
-              // Re-initialise the stock delivery order
-              // database instance every new order created
-              val db : Database = new Database();
-              db createConnection
-              
-              // Create the SQL attributes
-              val stmt : Statement = db.getDBConnection().createStatement();
-              
-              val sql2 : String = "INSERT INTO stockdeliveryorders VALUES ('" + stockDeliveryOrderID + "', '" + stockDeliveryDateReceived + "', '" + supplierName + "', '" + supplierTelephoneNumber + "', '" + supplierEmail + "', '" + supplierMethodOfContact + "', '" + supplierAddress + "', '" + orderStatusCreate + "')";
-              stmt executeUpdate(sql2)
-        }
-        catch {
-          case e : Throwable => e.printStackTrace()
-        }
   }
 }
