@@ -1,0 +1,25 @@
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+/**
+ * @author callum
+ */
+class Product(app : WarehouseOrderTrackingApplication) {
+  
+  // Product attributes
+  var productID : Int = _
+  
+  
+  /**
+   * Overloaded constructor
+   */
+  def this() = this(new WarehouseOrderTrackingApplication)
+  
+  /**
+   * Default Class constructor
+   */
+  def Order {
+  }
+  
+}

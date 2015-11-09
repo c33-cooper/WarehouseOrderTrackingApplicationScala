@@ -63,7 +63,7 @@ class Order(app : WarehouseOrderTrackingApplication) {
            rs close
      }
       catch {
-        case e : Throwable => e.printStackTrace
+        case e => e.printStackTrace
       }
    }
   

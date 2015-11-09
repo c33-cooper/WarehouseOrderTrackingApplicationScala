@@ -55,18 +55,8 @@ class Product(app : WarehouseOrderTrackingApplication) {
             productCost = rs getDouble("productCost")
             canHavePorousWare = rs getString("canHavePorousWare")
             productDiscontinued = rs getString("productDiscontinued")
-            
-            // Print products
-            System.out.println("Product ID: " + productID
-            + "\nProduct Name: " + productName
-            + "\nProduct Description: " + productDescription
-            + "\nProduct Type: " + productType
-            + "\nProduct Cost: " + productCost + " GBP"
-            + "\nProduct Discontinued: " + productDiscontinued
-            + "\nCan Have Porousware: " + canHavePorousWare + "\n");
           }
-    } catch {
-        case e : Throwable => e.printStackTrace
     }
   }
+  
 }

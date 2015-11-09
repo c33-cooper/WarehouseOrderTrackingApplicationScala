@@ -43,30 +43,7 @@ class Product(app : WarehouseOrderTrackingApplication) {
            productCost, canHavePorousWare,
            productDiscontinued FROM products"""
           val rs : ResultSet = stmt executeQuery(sql1)
-          
-          // Loop through database elements
-          while (rs next) {
-            
-            // Store database elements into attributes
-            productID = rs getInt("idproducts")
-            productName = rs getString("productName")
-            productDescription = rs getString("productDescription")
-            productType = rs getString("productType")
-            productCost = rs getDouble("productCost")
-            canHavePorousWare = rs getString("canHavePorousWare")
-            productDiscontinued = rs getString("productDiscontinued")
-            
-            // Print products
-            System.out.println("Product ID: " + productID
-            + "\nProduct Name: " + productName
-            + "\nProduct Description: " + productDescription
-            + "\nProduct Type: " + productType
-            + "\nProduct Cost: " + productCost + " GBP"
-            + "\nProduct Discontinued: " + productDiscontinued
-            + "\nCan Have Porousware: " + canHavePorousWare + "\n");
-          }
-    } catch {
-        case e : Throwable => e.printStackTrace
     }
   }
+  
 }

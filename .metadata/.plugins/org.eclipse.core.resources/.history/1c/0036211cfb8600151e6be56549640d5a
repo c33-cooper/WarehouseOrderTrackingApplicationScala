@@ -65,8 +65,7 @@ class Product(app : WarehouseOrderTrackingApplication) {
             + "\nProduct Discontinued: " + productDiscontinued
             + "\nCan Have Porousware: " + canHavePorousWare + "\n");
           }
-    } catch {
-        case e : Throwable => e.printStackTrace
     }
   }
+  
 }

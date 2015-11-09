@@ -103,7 +103,6 @@ class WarehouseOrderTrackingApplication {
     // Class instances
     val stockDeliveryOrder = new StockDeliveryOrder(this)
     val order = new Order(this)
-    val product = new Product(this)
     
     // Match for user functions
     // and based outcomes.
@@ -134,10 +133,6 @@ class WarehouseOrderTrackingApplication {
                   
                   // Update the status of the orders
                    order updateTheOrderStatus
-                   
-      case "4" => println("\nPRODUCT LIST...")            
-                  // Call product list from database
-                  product establishProductsFromDatabase
                    
       case "7" => println(employee.getUsername() +
           " IS LOGGING OUT...")
