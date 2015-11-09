@@ -1,0 +1,17 @@
+import scalafx.Includes._
+import scalafx.application.JFXApp.PrimaryStage
+import scalafx.scene.Scene
+import scalafx.scene.Scene.sfxScene2jfx
+import scalafx.stage.Stage.sfxStage2jfx
+import scalafx.scene.layout.HBox
+import scalafx.application.JFXApp.PrimaryStage
+import scalafx.application.JFXApp
+import scalafx.scene.control.TabPane
+import scalafx.scene.control.Tab
+
+/**
+ * @author callum
+ */
+class GuiMain extends JFXApp(){
+  
+}

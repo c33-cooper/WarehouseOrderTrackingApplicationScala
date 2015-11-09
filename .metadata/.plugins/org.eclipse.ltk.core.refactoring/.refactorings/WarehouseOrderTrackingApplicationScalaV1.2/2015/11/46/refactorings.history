@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;LoginGui.scala&apos; to &apos;WarehouseOrderTrackingApplicationScalaV1.2/src/main/gui&apos;&#x0D;&#x0A;- Original project: &apos;WarehouseOrderTrackingApplicationScalaV1.2&apos;&#x0D;&#x0A;- Destination element: &apos;WarehouseOrderTrackingApplicationScalaV1.2/src/main/gui&apos;&#x0D;&#x0A;- Original element: &apos;LoginGui.scala&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="/src\/main\/gui" element1="src/main/scala/LoginGui.scala" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1447067939475" units="0" version="1.0"/>
+</session>

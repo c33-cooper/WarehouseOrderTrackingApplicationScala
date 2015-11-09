@@ -1,0 +1,11 @@
+import GUI.GUIMain
+import GUI.LogIn
+import scalafx.application.JFXApp.PrimaryStage
+import scalafx.application.JFXApp
+
+/**
+ * @author callum
+ */
+object MainClass extends JFXApp{
+  
+}
