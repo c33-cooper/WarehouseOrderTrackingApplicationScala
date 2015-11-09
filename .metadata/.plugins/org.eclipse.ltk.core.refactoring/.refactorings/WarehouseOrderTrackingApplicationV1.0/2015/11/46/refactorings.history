@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;wh.jpg&apos; to &apos;WarehouseOrderTrackingApplication/src/main/scala&apos;&#x0D;&#x0A;- Original project: &apos;WarehouseOrderTrackingApplicationV1.0&apos;&#x0D;&#x0A;- Destination element: &apos;WarehouseOrderTrackingApplication/src/main/scala&apos;&#x0D;&#x0A;- Original element: &apos;wh.jpg&apos;" description="Copy file" destination="=WarehouseOrderTrackingApplication/src\/main\/scala" element1="wh.jpg" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1447087188171" units="0" version="1.0"/>
+</session>

@@ -58,7 +58,7 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
              rs close
     }
      catch {
-        case e => e.printStackTrace
+        case e : Throwable => e.printStackTrace
      }
   }
 }

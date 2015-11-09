@@ -1,4 +1,4 @@
-
+import java.io.File;
 
 /**
  * @author callum
@@ -104,6 +104,8 @@ class WarehouseOrderTrackingApplication {
     val stockDeliveryOrder = new StockDeliveryOrder(this)
     val order = new Order(this)
     val product = new Product(this)
+    val inventory = new Inventory(this)
+    val image : WarehouseLayoutImage = new WarehouseLayoutImage
     
     // Match for user functions
     // and based outcomes.
@@ -138,6 +140,12 @@ class WarehouseOrderTrackingApplication {
       case "4" => println("\nPRODUCT LIST...")            
                   // Call product list from database
                   product establishProductsFromDatabase
+                  
+      case "5" => println("\nINVENTORY LIST...")
+                  inventory establishInventoryFromDatabase
+                  
+      case "6" => // Show warehouse layout image
+                  image ShowWarehouseLayoutImage 
                    
       case "7" => println(employee.getUsername() +
           " IS LOGGING OUT...")

@@ -1,0 +1,24 @@
+
+
+/**
+ * @author callum
+ */
+class Inventory(app : WarehouseOrderTrackingApplication) {
+  
+  // Class attributes
+  var inventoryProduct : Product = new Product
+  var productQuantity : Int = _
+  
+  /**
+   * Overloaded constructor
+   */
+  def this() = this(new WarehouseOrderTrackingApplication)
+  
+  /**
+   * Default constructor
+   */
+  def Inventory() {
+  }
+  
+  
+}

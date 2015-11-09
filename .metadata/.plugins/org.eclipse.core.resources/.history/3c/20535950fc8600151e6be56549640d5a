@@ -1,0 +1,12 @@
+
+
+/**
+ * @author callum
+ */
+class Inventory(app : WarehouseOrderTrackingApplication) {
+  
+  /**
+   * Overloaded constructor
+   */
+  def this() = this(new WarehouseOrderTrackingApplication)
+}
