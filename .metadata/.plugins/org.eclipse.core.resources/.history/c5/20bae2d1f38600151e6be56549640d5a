@@ -1,0 +1,29 @@
+
+/**
+ * @author callum
+ */
+class Employee(app : WarehouseOrderTrackingApplication) {
+  
+  // Employee attributes
+  var employeeUsername : String = _
+  var employeePassword : String = _
+  
+   /**
+   * Overloaded constructor
+   */
+  def this() = this(new WarehouseOrderTrackingApplication)
+  
+  /**
+   * Default Class constructor
+   */
+  def Employee() {
+  }
+  
+  /**
+   * Establish employee table
+   */
+  def establishEmployeesFromDatabase() {
+    
+  }
+  
+}

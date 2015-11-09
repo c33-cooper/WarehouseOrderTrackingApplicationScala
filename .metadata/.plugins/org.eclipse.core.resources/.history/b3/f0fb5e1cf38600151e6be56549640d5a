@@ -1,0 +1,12 @@
+
+/**
+ * @author callum
+ */
+class Employee(app : WarehouseOrderTrackingApplication) {
+  
+  // Employee attributes
+  var employeeUsername : String = _
+  var employeePassword : String = _
+  
+  
+}

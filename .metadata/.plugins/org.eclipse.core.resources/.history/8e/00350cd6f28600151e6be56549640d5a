@@ -1,0 +1,10 @@
+
+/**
+ * @author callum
+ */
+class Employee {
+  
+  // Employee attributes
+  var employeeUsername : String = _
+  var employeePassword : String = _
+}

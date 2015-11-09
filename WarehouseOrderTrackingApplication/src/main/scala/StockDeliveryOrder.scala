@@ -163,6 +163,7 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication) {
     // Ask the user if they want to update the
     // the status of the order
     println("\nType 'CHECKOUT' to check out the stock delivery order and update the status...")
+    println("Type 'AVAILABLE' to make the stock delivery order available and update the status...")
     val stockDeliveryOrderStatusChoice : String = readLine
     
     // Run check to see if order wants to be checked out
@@ -176,6 +177,19 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication) {
     else {
           // Display default message
           println("No Stock Delivery Orders have been checked out...")
+    }
+    
+    // Run check to see if order wants to be re-set to available
+    if (stockDeliveryOrderStatusChoice.equalsIgnoreCase("AVAILABLE")) {
+      // Re-set the status of the order
+      resetStockDeliveryOrderStatusFromDatabase
+      
+      // Re-set stock deliver order from database
+      println("Stock Delivery Order is now available...")
+    }
+    else {
+      // Display default message
+      println("No Stock Delivery Orders have been made available...")
     }
   }
   
@@ -196,6 +210,29 @@ class StockDeliveryOrder(app : WarehouseOrderTrackingApplication) {
           
           // SQL attributes
           val sql3 : String = "UPDATE stockdeliveryorders SET orderStatus = 'CHECKED OUT' WHERE idstockdeliveryorders = " + stockDeliveryOrderSelector
+          stmt executeUpdate(sql3)
+    }
+     catch {
+       case e : Throwable => e.printStackTrace
+     }
+  }
+  
+  /**
+   * Re-set the status of the order
+   */
+  def resetStockDeliveryOrderStatusFromDatabase {
+     // create a new connection to the database 
+     val db = new Database
+     db createConnection
+    
+    // Connect to the stock delivery order database and update
+    // the checked out orders
+    try {
+          // Create a new connection to the database
+          val stmt : Statement = db.getDBConnection().createStatement()
+          
+          // SQL attributes
+          val sql3 : String = "UPDATE stockdeliveryorders SET orderStatus = 'AVAILABLE' WHERE idstockdeliveryorders = " + stockDeliveryOrderSelector
           stmt executeUpdate(sql3)
     }
      catch {
