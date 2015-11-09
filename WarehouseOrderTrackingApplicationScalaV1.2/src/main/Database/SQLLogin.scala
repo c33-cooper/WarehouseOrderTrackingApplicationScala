@@ -25,7 +25,7 @@ class SQLLogin(username : String, password : String) {
       val statement = connection createStatement()
       val resultSet = statement executeQuery("SELECT employeeUsername, employeePassword FROM employees")
     
-      while(resultSet next())
+      while(resultSet next)
       {
         employeeUsernames += resultSet getString("employeeUsername")
         employeePasswords += resultSet getString("employeePassword")

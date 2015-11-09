@@ -1,0 +1,64 @@
+import java.sql.Statement
+import java.sql.ResultSet
+import java.sql.Connection
+
+/**
+ * @author callum
+ */
+class Order {
+  
+  // Attributes
+  var orderSelector : String = _
+  var orderID : String = _
+  var orderDateCreated : String = _
+  var orderVerified : Boolean = _
+  var orderTotals : Double = _
+  var productQuantity : Int = _
+  var orderStatus : String = _
+  
+   /**
+   * Establish the orders table
+   */
+  def establishOrdersFromDatabase {
+     
+     // Establish the orders
+     try{
+           // Create the sql attributes
+           val dbConnection = new Database()
+           val connection : Connection = dbConnection connect()
+           
+           // SQL attributes
+           //Creates the statement and runs the select query
+            val statement = connection createStatement()
+            val rs = statement executeQuery("""SELECT idorders, orderDateCreated,
+           orderVerified, orderTotal, productQuantity, orderStatus 
+           FROM orders""")
+           
+           // Loop through database elements
+           while (rs next) {
+             
+             // Store database elements into attributes
+              val orderID : String = rs.getString("idorders")
+              val orderDateCreated : String = rs.getString("orderDateCreated")
+              val orderVerified : Boolean = rs.getBoolean("orderVerified")
+              val orderTotals : Double = rs.getDouble("orderTotal")
+              val productQuantity : Int = rs.getInt("productQuantity")
+              val orderStatus : String = rs.getString("orderStatus")
+              
+              // Print orders
+              println("Order ID: " + orderID
+                      + "\nOrder Date Created: " + orderDateCreated
+                      + "\nOrder Verified: " + orderVerified
+                      + "\nOrder Total: " + orderTotals + " GBP"
+                      + "\nProduct Quantity: " + productQuantity 
+                      + "\nOrder Status: " + orderStatus + "\n")
+           }
+           // Close the connection
+           rs close
+     }
+      catch {
+        case e => e.printStackTrace
+      }
+   }
+  
+}

@@ -8,6 +8,8 @@ import scalafx.application.JFXApp.PrimaryStage
 import scalafx.application.JFXApp
 import scalafx.scene.control.TabPane
 import scalafx.scene.control.Tab
+import scalafx.scene.paint.Color._
+import scalafx.scene.control.TableColumn
 
 /**
  * @author callum
@@ -20,6 +22,7 @@ class GuiMain extends JFXApp(){
    def createTabs() : TabPane = 
   {
     new TabPane {
+      
       tabs = List(
        new Tab {
          text = "Customer Orders"
@@ -38,13 +41,17 @@ class GuiMain extends JFXApp(){
    */
   def createScene() : Scene =
   {
+    // Main GUI SCENE *****
     val scene2 = new Scene
     {
+      fill = LightGreen
       content = new HBox
       {   
+        // Inside of the scene, has a set of children which
+        // contains elements of the scene.
         children = Seq(
-       
-            createTabs()
+          
+            //createTabs()
            //createGridPane()      
         )
       }
@@ -66,5 +73,4 @@ class GuiMain extends JFXApp(){
     stage height = 600
 
   }
-  
 }
