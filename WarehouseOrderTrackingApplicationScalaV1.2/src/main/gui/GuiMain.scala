@@ -14,46 +14,45 @@ import scalafx.scene.control.Tab
  */
 class GuiMain extends JFXApp(){
   
+  /**
+   * Create the tabs for the main window
+   */
    def createTabs() : TabPane = 
   {
     new TabPane {
       tabs = List(
-      
        new Tab {
          text = "Customer Orders"
          //val custOrderGUI : CustomerOrderGUI = new CustomerOrderGUI()
          //content = custOrderGUI.createGridPane()
        },
-       
        new Tab{
          text = "Purchase Orders"
        }
-      
       )
     }
   }
  
-  /*
+  /**
    * Creates the scene to hold the tabs
    */
   def createScene() : Scene =
   {
     val scene2 = new Scene
     {
-        
       content = new HBox
       {   
         children = Seq(
-        
+       
             createTabs()
            //createGridPane()      
         )
       }
     }
-    
-    scene2
+    scene2 // return the new scene
   }
 
+  // Show the login scene
   def showLogin(): Unit = 
   {
     stage = new PrimaryStage()
@@ -62,7 +61,7 @@ class GuiMain extends JFXApp(){
     
     stage.show()
     
-    stage title = "Warehouse Order Tracking Application"
+    stage title = "Warehouse Order Tracking Application V1.2"
     stage width = 800
     stage height = 600
 

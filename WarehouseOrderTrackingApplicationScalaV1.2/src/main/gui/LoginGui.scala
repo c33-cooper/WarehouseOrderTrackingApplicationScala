@@ -22,29 +22,39 @@ class LoginGui(stage : PrimaryStage) {
   
   // Class Attributes
   stage title = ""
-  stage width = 400
+  stage width = 300
   stage height = 400
   
+  /**
+   * Initialise the login button for the login window
+   */
   def initLoginButton(usernameField : TextField, passwordField : TextField) : Button = {
     
+    // Create a new button
     val button = new Button
     {
+      // text field of button is login
       text = ("Log in")
       
+      // Add an action event listener to the button
       onAction = (ae : ActionEvent) =>
         {
           val user : String = usernameField.text getValue
           val pass : String = passwordField.text getValue
           
+          // Create a new login sql instance
           val login = new SQLLogin(user, pass)
           
+          // Call the login function from the sql class
            login logIn()
          
+          // Verify the login 
            val bool = login verifyLogIn()
            if(bool)
          {
+           // If user has been verified to login create
+           // a new GUI window
            val gui : GuiMain = new GuiMain()
-           
            gui.showLogin()
          }
        }
@@ -52,27 +62,41 @@ class LoginGui(stage : PrimaryStage) {
     button
   }   
   
+  /**
+   * Create a new text field
+   */
    val username = new TextField()
-    {
-   
+   {
+     // Assign username to the textfield
       promptText = "Username: "
-    }
+   }
 
+   /**
+    * Create a new password field
+    */
   val passwordField = new PasswordField
-    {
-    
-      promptText = "Password: "
-    }
-  
-    def createRect(): Rectangle = 
   {
+    // Assign password to the textfield
+      promptText = "Password: "
+  }
+  
+  /**
+   * Create a rectangle
+   */
+  def createRect(): Rectangle = 
+  {
+    // Create a logo image & rectangle to place within scene
      val image = new Image("file:src/main/gui/logo.png")
      val rect = new Rectangle(0, 0, 125, 125)
      rect setFill(new ImagePattern(image))
      rect
   }
   
+    /**
+     * Initialise the grid pane for the scene
+     */
     def initGridPane() : GridPane = {
+      // Create a new grid pane and return
        new GridPane {
         hgap = 10
         vgap = 10
@@ -88,6 +112,9 @@ class LoginGui(stage : PrimaryStage) {
        }
   }
     
+    /**
+     * Initialise the scene
+     */
     def initScene() : Scene = {
       
       // Create new scene object
@@ -101,6 +128,7 @@ class LoginGui(stage : PrimaryStage) {
       scene
     }
     
+    // Show the login window
     def showLogin(): Unit = 
     {
       stage setScene(initScene())
