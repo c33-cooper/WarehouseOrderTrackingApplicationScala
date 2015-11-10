@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+
+/**
+ * 
+ * @author Callum
+ * @description Holds the locations of products
+ */
+
+public class LocationManager {
+
+	// Holds our locations
+	private static ArrayList destinationLocations = new ArrayList<Location>();
+	
+	// Adds a destination city
+	public static void addLocations(Location location) {
+		destinationLocations.add(location);
+	}
+	
+	// Get a location
+	public static Location getLocation(int index) {
+		return (Location)destinationLocations.get(index);
+	}
+	
+	// Get the number of destination cities
+	public static int numberOfCities() {
+		return destinationCities.size();
+	}
+}

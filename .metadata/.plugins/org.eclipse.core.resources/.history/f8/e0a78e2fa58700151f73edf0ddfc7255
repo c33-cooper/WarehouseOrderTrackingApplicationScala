@@ -1,0 +1,18 @@
+
+public class RouteTracker {
+
+	/**
+	 *  Class Constructor
+	 */
+	public RouteTracker(){
+	}
+	
+	/**
+	 * Run the tracker
+	 */
+	public void RunRouteTracker() {
+		
+		// Create and add locations in the warehouse
+		
+	}
+}

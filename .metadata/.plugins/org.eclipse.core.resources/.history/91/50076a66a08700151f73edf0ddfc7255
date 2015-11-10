@@ -1,0 +1,26 @@
+/*
+* LocationManager.java
+* Holds the locations of a route
+*/
+import java.util.ArrayList;
+
+public class LocationManager {
+
+    // Holds our cities
+    private static ArrayList destinationLocations = new ArrayList<Location>();
+
+    // Adds a destination location
+    public static void addLocation(Location location) {
+        destinationLocations.add(location);
+    }
+    
+    // Get a city
+    public static City getCity(int index){
+        return (City)destinationCities.get(index);
+    }
+    
+    // Get the number of destination cities
+    public static int numberOfCities(){
+        return destinationCities.size();
+    }
+}
