@@ -165,7 +165,7 @@ class WarehouseOrderTrackingApplication {
                   image ShowWarehouseLayoutImage 
                    
       case "8" => // Show calculated warehouse image
-                  routeImage ShowWarehouseRouteImage
+                  
                   
       case "9" => println(employee.getUsername() +
                   " IS LOGGING OUT...")

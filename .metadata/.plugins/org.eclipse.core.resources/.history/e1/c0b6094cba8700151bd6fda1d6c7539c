@@ -41,7 +41,7 @@ class Inventory(app : WarehouseOrderTrackingApplication) {
        val stmt : Statement = db.getDBConnection().createStatement()
        val sql1 : String = """SELECT idinventory, productQuantity,
              warehouseLocationX, warehouseLocationY,
-             productName FROM inventory, products where inventory.products = products.idproducts"""
+             Products FROM inventory"""
        val rs : ResultSet = stmt.executeQuery(sql1)
        
        // Loop through database elements
@@ -51,13 +51,12 @@ class Inventory(app : WarehouseOrderTrackingApplication) {
          productQuantity = rs getInt("productQuantity")
          warehouseLocationX = rs getInt("warehouseLocationX")
          warehouseLocationY = rs getInt("warehouseLocationY")
-         products = rs getString("productName")
+         products = rs getString("Products")
          
          // Print inventory
          println("Product Quantity: " + productQuantity
               + "\nWarehouse Location X: " + warehouseLocationX
-              + "\nWarehouse Location Y: " + warehouseLocationY 
-              + "\nProduct: " + products + "\n")
+              + "\nWarehouse Location Y: " + warehouseLocationY + "\n")
        }
      }
     catch {

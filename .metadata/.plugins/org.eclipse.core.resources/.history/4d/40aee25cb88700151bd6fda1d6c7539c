@@ -2,7 +2,6 @@ package app
 
 import support.WarehouseLayoutImage
 import support.RouteTracker
-import support.WarehouseRouteImage
 
 /**
  * @import app.Product
@@ -104,11 +103,10 @@ class WarehouseOrderTrackingApplication {
     println("3: DISPLAY ORDER LIST");
     println("4: DISPLAY PRODUCT LIST");
     println("5: DISPLAY INVENTORY LIST");
-    println("6: CALCULATE WAREHOUSE ROUTES")
-    println("7: VIEW WAREHOUSE LAYOUT");
-    println("8: VIEW CALCULATED WAREHOUSE LAYOUT")
-    println("9: LOG OUT");
-    println("10: ***EXIT THE PROGRAM***");
+    println("6: VIEW WAREHOUSE LAYOUT");
+    println("7: LOG OUT");
+    println("8: ***EXIT THE PROGRAM***");
+    println("9: CALCULATE ROUTES")
     programFunctions = readLine
     
     // Class instances
@@ -117,7 +115,6 @@ class WarehouseOrderTrackingApplication {
     val product = new Product(this)
     val inventory = new Inventory(this)
     val image = new WarehouseLayoutImage
-    val routeImage = new WarehouseRouteImage
     val runGA = new RouteTracker
     
     // Match for user functions
@@ -157,23 +154,20 @@ class WarehouseOrderTrackingApplication {
       case "5" => println("\nINVENTORY LIST...")
                   inventory establishInventoryFromDatabase
                   
-      case "6" => 
-                  // Create and add our cities
-                  runGA.RunRouteTracker()
-                  
-      case "7" => // Show warehouse layout image
+      case "6" => // Show warehouse layout image
                   image ShowWarehouseLayoutImage 
                    
-      case "8" => // Show calculated warehouse image
-                  routeImage ShowWarehouseRouteImage
-                  
-      case "9" => println(employee.getUsername() +
-                  " IS LOGGING OUT...")
+      case "7" => println(employee.getUsername() +
+          " IS LOGGING OUT...")
       
-      case "10" => 
+      case "8" => 
                  // Display exit message & exit the program
                   println("Exiting Program...")                   
                    System.exit(1);
+                  
+      case "9" => 
+                // Create and add our cities
+                runGA.RunRouteTracker()
       
       case _ => println("Nothing chosen..")
     }

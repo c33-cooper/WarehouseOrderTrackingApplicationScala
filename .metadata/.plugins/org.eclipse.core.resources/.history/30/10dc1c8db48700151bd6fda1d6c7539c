@@ -14,7 +14,6 @@ class Inventory(app : WarehouseOrderTrackingApplication) {
   var productQuantity : Int = _
   var warehouseLocationX : Int = _
   var warehouseLocationY : Int = _
-  var products : String = _
   
   /**
    * Overloaded constructor
@@ -40,8 +39,8 @@ class Inventory(app : WarehouseOrderTrackingApplication) {
          // SQL attributes
        val stmt : Statement = db.getDBConnection().createStatement()
        val sql1 : String = """SELECT idinventory, productQuantity,
-             warehouseLocationX, warehouseLocationY,
-             productName FROM inventory, products where inventory.products = products.idproducts"""
+             warehouseLocationRow, warehouseLocationAisle,
+             Products FROM inventory"""
        val rs : ResultSet = stmt.executeQuery(sql1)
        
        // Loop through database elements
@@ -49,15 +48,13 @@ class Inventory(app : WarehouseOrderTrackingApplication) {
          
          // Store database elements into attributes
          productQuantity = rs getInt("productQuantity")
-         warehouseLocationX = rs getInt("warehouseLocationX")
-         warehouseLocationY = rs getInt("warehouseLocationY")
-         products = rs getString("productName")
+         warehouseLocationRow = rs getInt("warehouseLocationRow")
+         warehouseLocationAisle = rs getString("warehouseLocationAisle")
          
          // Print inventory
          println("Product Quantity: " + productQuantity
-              + "\nWarehouse Location X: " + warehouseLocationX
-              + "\nWarehouse Location Y: " + warehouseLocationY 
-              + "\nProduct: " + products + "\n")
+              + "\nWarehouse Location Row: " + warehouseLocationRow
+              + "\nWarehouse Location Aisle: " + warehouseLocationAisle + "\n")
        }
      }
     catch {

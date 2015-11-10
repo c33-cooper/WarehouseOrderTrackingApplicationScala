@@ -41,7 +41,7 @@ class Inventory(app : WarehouseOrderTrackingApplication) {
        val stmt : Statement = db.getDBConnection().createStatement()
        val sql1 : String = """SELECT idinventory, productQuantity,
              warehouseLocationX, warehouseLocationY,
-             productName FROM inventory, products where inventory.products = products.idproducts"""
+             productName FROM inventory, products where inventory.products = products.productid"""
        val rs : ResultSet = stmt.executeQuery(sql1)
        
        // Loop through database elements

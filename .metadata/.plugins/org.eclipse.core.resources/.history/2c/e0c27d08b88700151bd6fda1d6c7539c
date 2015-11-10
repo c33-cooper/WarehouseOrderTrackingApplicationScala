@@ -68,7 +68,7 @@ public class RouteTracker {
 
         // Print final results
         System.out.println("Finished");
-        System.out.println("Final distance: " + pop.getFittest().getDistance() + " Metres");
+        System.out.println("Final distance: " + pop.getFittest().getDistance());
         System.out.println("Solution:");
         System.out.println(pop.getFittest());
 	}

@@ -2,7 +2,6 @@ package app
 
 import support.WarehouseLayoutImage
 import support.RouteTracker
-import support.WarehouseRouteImage
 
 /**
  * @import app.Product
@@ -117,7 +116,6 @@ class WarehouseOrderTrackingApplication {
     val product = new Product(this)
     val inventory = new Inventory(this)
     val image = new WarehouseLayoutImage
-    val routeImage = new WarehouseRouteImage
     val runGA = new RouteTracker
     
     // Match for user functions
@@ -164,9 +162,6 @@ class WarehouseOrderTrackingApplication {
       case "7" => // Show warehouse layout image
                   image ShowWarehouseLayoutImage 
                    
-      case "8" => // Show calculated warehouse image
-                  routeImage ShowWarehouseRouteImage
-                  
       case "9" => println(employee.getUsername() +
                   " IS LOGGING OUT...")
       

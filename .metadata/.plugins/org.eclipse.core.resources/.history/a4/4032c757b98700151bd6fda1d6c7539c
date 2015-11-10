@@ -1,0 +1,16 @@
+package support;
+
+/**
+ * 
+ * @author callum
+ *
+ */
+public class WarehouseRouteImage {
+
+	/**
+	 * Class constructor
+	 */
+	public WarehouseRouteImage() {
+		
+	}
+}
