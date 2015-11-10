@@ -10352,3 +10352,9 @@ Caused by: java.lang.NullPointerException
 2015-11-10 14:54:40,850  WARN [Worker-39] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
 2015-11-10 14:54:41,161  WARN [Worker-39] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
 2015-11-10 14:54:41,161  WARN [Worker-39] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 15:12:18,369  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 15:12:18,369  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 15:12:18,385  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 15:12:18,385  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 15:12:18,728  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 15:12:18,728  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
