@@ -2,17 +2,11 @@ package app
 
 import java.sql.Statement
 import java.sql.ResultSet
-import support.Location
-import support.LocationManager
 
 /**
  * @author callum
  */
 class OrderLine(app : WarehouseOrderTrackingApplication) {
-  
-  // Attributes
-  var x : Int = _
-  var y : Int = _
   
   /**
    * Overloaded Constructor
@@ -42,7 +36,7 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
           
           // SQL attributes
           val sql1 : String = """SELECT idorderline, idorders, productName,
-          porousware, productQuantity, x, y FROM orderline, products WHERE orderline.idproducts = products.idproducts
+          porousware, productQuantity FROM orderline, products WHERE orderline.idproducts = products.idproducts
           AND idorders = """ + orderID
           var rs : ResultSet = stmt.executeQuery(sql1)
           
@@ -55,16 +49,12 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
               val productName : String = rs.getString("productName");
               val porousware : String = rs.getString("porousware");
               val productQuantity : Int = rs.getInt("productQuantity");
-              x = rs.getInt("x")
-              y = rs.getInt("y")
               
               // Print orderline
               println("|Product Name: " + productName
                                 + "|Porousware: " + porousware
                                 + "|Product Quantity: " + productQuantity
-                                + "|" + "X: " + x + "|" + "Y: " + y)
-                                
-             
+                                + "|")
           }
              // Close the connection
              rs close

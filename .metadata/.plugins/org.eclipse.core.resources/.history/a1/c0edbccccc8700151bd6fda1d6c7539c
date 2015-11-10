@@ -2,8 +2,6 @@ package app
 
 import java.sql.Statement
 import java.sql.ResultSet
-import support.Location
-import support.LocationManager
 
 /**
  * @author callum
@@ -13,6 +11,7 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
   // Attributes
   var x : Int = _
   var y : Int = _
+  var count : Int = _
   
   /**
    * Overloaded Constructor
@@ -72,5 +71,10 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
      catch {
         case e : Throwable => e.printStackTrace
      }
+  }
+  
+  // Create route on selected order
+  def createRoute() {
+    
   }
 }

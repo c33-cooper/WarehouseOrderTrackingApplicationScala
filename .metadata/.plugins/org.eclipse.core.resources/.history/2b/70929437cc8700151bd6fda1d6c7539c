@@ -2,17 +2,11 @@ package app
 
 import java.sql.Statement
 import java.sql.ResultSet
-import support.Location
-import support.LocationManager
 
 /**
  * @author callum
  */
 class OrderLine(app : WarehouseOrderTrackingApplication) {
-  
-  // Attributes
-  var x : Int = _
-  var y : Int = _
   
   /**
    * Overloaded Constructor
@@ -55,16 +49,14 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
               val productName : String = rs.getString("productName");
               val porousware : String = rs.getString("porousware");
               val productQuantity : Int = rs.getInt("productQuantity");
-              x = rs.getInt("x")
-              y = rs.getInt("y")
+              val x : Int =rs.getInt("x")
+              val y : Int =rs.getInt("y")
               
               // Print orderline
               println("|Product Name: " + productName
                                 + "|Porousware: " + porousware
                                 + "|Product Quantity: " + productQuantity
                                 + "|" + "X: " + x + "|" + "Y: " + y)
-                                
-             
           }
              // Close the connection
              rs close

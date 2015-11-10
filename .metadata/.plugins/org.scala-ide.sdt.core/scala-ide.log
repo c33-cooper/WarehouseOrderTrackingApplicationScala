@@ -10358,3 +10358,191 @@ Caused by: java.lang.NullPointerException
 2015-11-10 15:12:18,385  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
 2015-11-10 15:12:18,728  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
 2015-11-10 15:12:18,728  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 15:55:58,266  WARN [Worker-25] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 15:55:58,266  WARN [Worker-25] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 15:55:58,266  WARN [Worker-25] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 15:55:58,266  WARN [Worker-25] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 15:55:58,360  WARN [Worker-25] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 15:55:58,360  WARN [Worker-25] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 15:56:28,527  WARN [Worker-25] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 15:56:28,527  WARN [Worker-25] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 15:56:28,542  WARN [Worker-25] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 15:56:28,542  WARN [Worker-25] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 15:56:28,605  WARN [Worker-25] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 15:56:28,605  WARN [Worker-25] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:14:02,928  WARN [Worker-47] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:14:02,928  WARN [Worker-47] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:14:02,928  WARN [Worker-47] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:14:02,928  WARN [Worker-47] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:14:02,944  WARN [Worker-47] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:14:02,944  WARN [Worker-47] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:17:30,344  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:17:30,344  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:17:30,344  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:17:30,344  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:17:58,693  WARN [Worker-60] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:17:58,693  WARN [Worker-60] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:17:58,709  WARN [Worker-60] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:17:58,709  WARN [Worker-60] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:17:58,724  WARN [Worker-60] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:17:58,724  WARN [Worker-60] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:40:06,654  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:40:06,654  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:40:06,654  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:40:06,654  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:40:09,758  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:40:09,758  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:40:18,104  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:40:18,104  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:40:18,120  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:40:18,120  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:40:18,588  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:40:18,588  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:40:40,157  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:40:40,157  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:40:40,172  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:40:40,172  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:40:40,640  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:40:40,640  WARN [Worker-29] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:41:21,993  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:41:21,993  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:41:21,993  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:41:21,993  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:41:22,360  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:41:22,360  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:53:00,609  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:53:00,609  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:53:00,609  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:53:00,609  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:53:00,968  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:53:00,968  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:55:04,581  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:55:04,581  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:55:04,596  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:55:04,596  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:55:04,940  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:55:04,940  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:56:46,979  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:56:46,979  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:56:46,994  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:56:46,994  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:56:52,721  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:56:52,721  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:56:52,737  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:56:52,737  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:56:53,049  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:56:53,049  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:58:08,147  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:58:08,147  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:58:08,163  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:58:08,163  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:58:08,803  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:58:08,803  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:58:30,619  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:58:30,619  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:58:30,619  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:58:30,619  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:58:30,931  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:58:30,931  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:59:08,318  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:59:08,318  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:59:08,334  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:59:08,334  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:59:08,942  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:59:08,942  WARN [Worker-50] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:59:23,048  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:59:23,048  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:59:23,064  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:59:23,064  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 16:59:23,657  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 16:59:23,657  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:00:22,910  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:00:22,910  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:00:22,926  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:00:22,926  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:00:23,550  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:00:23,550  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:01:27,130  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:01:27,130  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:01:27,146  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:01:27,146  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:01:27,177  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:01:27,177  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:01:57,872  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:01:57,872  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:01:57,872  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:01:57,872  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:01:58,434  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:01:58,434  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:02:18,408  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:02:18,408  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:02:18,424  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:02:18,424  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:02:18,751  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:02:18,751  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:03:11,556  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:03:11,556  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:03:11,571  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:03:11,571  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:03:14,646  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:03:14,646  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:03:14,662  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:03:14,662  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:03:15,005  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:03:15,005  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:04:13,647  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:04:13,647  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:04:13,663  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:04:13,663  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:04:13,944  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:04:13,944  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:04:19,748  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:04:19,748  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:04:19,748  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:04:19,748  WARN [Worker-63] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:04:44,542  WARN [Worker-66] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:04:44,542  WARN [Worker-66] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:04:44,558  WARN [Worker-66] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:04:44,558  WARN [Worker-66] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:05:53,887  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:05:53,887  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:05:53,887  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:05:53,887  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:06:21,257  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:06:21,257  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:06:21,257  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:06:21,257  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:06:32,680  WARN [Worker-66] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:06:32,680  WARN [Worker-66] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:06:32,696  WARN [Worker-66] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:06:32,696  WARN [Worker-66] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:07:25,242  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:07:25,242  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:07:25,258  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:07:25,258  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:07:30,626  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:07:30,626  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:07:30,642  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:07:30,642  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:07:44,518  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:07:44,518  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:07:44,534  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:07:44,534  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:08:03,491  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:08:03,491  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:08:03,507  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:08:03,507  WARN [Worker-57] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:08:31,175  WARN [Worker-66] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:08:31,175  WARN [Worker-66] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:08:31,191  WARN [Worker-66] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:08:31,191  WARN [Worker-66] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:08:40,457  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:08:40,457  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:08:40,473  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:08:40,473  WARN [Worker-61] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:08:47,360  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:08:47,360  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:08:47,375  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:08:47,375  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.
+2015-11-10 17:08:47,890  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication has platform default sourceLevel.
+2015-11-10 17:08:47,890  WARN [Worker-67] - ScalaProject - Project WarehouseOrderTrackingApplication runs on platform default installation.

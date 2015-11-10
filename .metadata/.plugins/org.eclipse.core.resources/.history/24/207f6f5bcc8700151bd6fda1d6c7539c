@@ -2,8 +2,6 @@ package app
 
 import java.sql.Statement
 import java.sql.ResultSet
-import support.Location
-import support.LocationManager
 
 /**
  * @author callum
@@ -63,8 +61,6 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
                                 + "|Porousware: " + porousware
                                 + "|Product Quantity: " + productQuantity
                                 + "|" + "X: " + x + "|" + "Y: " + y)
-                                
-             
           }
              // Close the connection
              rs close

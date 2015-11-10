@@ -17,8 +17,6 @@ class Product(app : WarehouseOrderTrackingApplication) {
   var productCost : Double = _
   var canHavePorousWare : String = _
   var productDiscontinued : String = _
-  var x : Int = _
-  var y : Int = _
   
   /**
    * Overloaded constructor
@@ -45,7 +43,7 @@ class Product(app : WarehouseOrderTrackingApplication) {
           val sql1 : String = """SELECT idproducts, productName,
            productDescription, productType,
            productCost, canHavePorousWare,
-           productDiscontinued, x, y FROM products"""
+           productDiscontinued FROM products"""
           val rs : ResultSet = stmt executeQuery(sql1)
           
           // Loop through database elements
@@ -59,8 +57,6 @@ class Product(app : WarehouseOrderTrackingApplication) {
             productCost = rs getDouble("productCost")
             canHavePorousWare = rs getString("canHavePorousWare")
             productDiscontinued = rs getString("productDiscontinued")
-            x = rs getInt("x")
-            y = rs getInt("y")
             
             // Print products
             System.out.println("Product ID: " + productID
@@ -69,9 +65,7 @@ class Product(app : WarehouseOrderTrackingApplication) {
             + "\nProduct Type: " + productType
             + "\nProduct Cost: " + productCost + " GBP"
             + "\nProduct Discontinued: " + productDiscontinued
-            + "\nCan Have Porousware: " + canHavePorousWare 
-            + "\nX: " + x 
-            + "\nY: " + y + "\n");
+            + "\nCan Have Porousware: " + canHavePorousWare + "\n");
           }
     } catch {
         case e : Throwable => e.printStackTrace

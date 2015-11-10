@@ -69,9 +69,7 @@ class Product(app : WarehouseOrderTrackingApplication) {
             + "\nProduct Type: " + productType
             + "\nProduct Cost: " + productCost + " GBP"
             + "\nProduct Discontinued: " + productDiscontinued
-            + "\nCan Have Porousware: " + canHavePorousWare 
-            + "\nX: " + x 
-            + "\nY: " + y + "\n");
+            + "\nCan Have Porousware: " + canHavePorousWare + "\n");
           }
     } catch {
         case e : Throwable => e.printStackTrace
