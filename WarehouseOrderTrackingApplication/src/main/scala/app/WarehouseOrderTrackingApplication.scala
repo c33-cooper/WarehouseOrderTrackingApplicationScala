@@ -106,7 +106,7 @@ class WarehouseOrderTrackingApplication {
     println("6: VIEW WAREHOUSE LAYOUT");
     println("7: LOG OUT");
     println("8: ***EXIT THE PROGRAM***");
-    println("9: Calculate Routes")
+    println("9: CALCULATE ROUTES")
     programFunctions = readLine
     
     // Class instances
