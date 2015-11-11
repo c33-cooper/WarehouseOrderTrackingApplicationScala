@@ -37,6 +37,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\callum\workspace\WarehouseOrderTrackingApplicationScala"/>
 			<item value="C:\Users\callum\Desktop\WOTAScala"/>
 		</list>
 		<list key="projectNameTemplate">
