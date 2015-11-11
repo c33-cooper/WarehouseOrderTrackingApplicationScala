@@ -1,0 +1,14 @@
+
+
+/**
+ * @author callum
+ */
+class Encryption {
+  
+  /**
+   * Default constructor
+   */
+  def Encryption{
+  }
+  
+}

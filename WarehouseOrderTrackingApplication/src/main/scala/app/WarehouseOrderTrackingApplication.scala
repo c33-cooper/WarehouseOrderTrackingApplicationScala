@@ -114,6 +114,7 @@ class WarehouseOrderTrackingApplication {
     val image = new WarehouseLayoutImage
     val routeImage = new WarehouseRouteImage
     val runGA = new RouteTracker
+    val encryption = new Encryption
     
     // Match for user functions
     // and based outcomes.
@@ -169,6 +170,9 @@ class WarehouseOrderTrackingApplication {
                  // Display exit message & exit the program
                   println("Exiting Program...")                   
                    System.exit(1);
+                  
+      case "11" => 
+                encryption checkMD5(employee.getPassword())
       
       case _ => println("Nothing chosen..")
     }

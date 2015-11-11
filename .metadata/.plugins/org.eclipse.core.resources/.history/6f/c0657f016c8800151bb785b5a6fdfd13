@@ -1,0 +1,43 @@
+
+
+package app
+
+import java.security.MessageDigest
+
+/**
+ * @author callum
+ */
+
+class Encryption {
+  
+  /**
+   * Encryption attributes
+   */
+  val crypt : MessageDigest = MessageDigest.getInstance("MD5")
+  
+  /**
+   * Default constructor
+   */
+  def Encryption{
+  }
+  
+  /**
+   * Check password string against a SHA1 conversion
+   */
+  def checkMD5(password : String) {
+    
+    // Quick MD5 of text
+    val text = "MD5 this text!"
+    val md5hash1 = crypt.digest(password.getBytes).map("%02x".format(_)).mkString
+    
+    //MD5 of text with updates
+      crypt.update("MD5 ".getBytes())
+      crypt.update("this ".getBytes())
+      crypt.update("text!".getBytes())
+      val md5hash2 = crypt.digest().map(0xFF & _).map("%02x".format(_)).mkString
+       
+      //Output
+      println(md5hash1 + " should be the same as " + md5hash2)
+  }
+  
+}
