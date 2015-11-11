@@ -68,7 +68,7 @@ class Inventory(app : WarehouseOrderTrackingApplication) {
   /**
    * Update the Inventory counts
    */
-  def updateInventoryCounts(quantity : Int, products : String) {
+  def updateInventoryCounts(quantity : Int, products : Int) {
     productQuantity -= quantity
     
     // Create database instance & connection

@@ -30,7 +30,7 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
   /**
    * Establish the order line from database
    */
-  def establishOrderLine(orderIDs : String) {
+  def establishOrderLine(orderID : String) {
     
     // Establish the order lines 
     try {
@@ -48,7 +48,7 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
           // SQL attributes
           val sql1 : String = """SELECT idorderline, idorders, productName,
           porousware, productQuantity, x, y FROM orderline, products WHERE orderline.idproducts = products.idproducts
-          AND idorders = """ + orderIDs
+          AND idorders = """ + orderID
           var rs : ResultSet = stmt.executeQuery(sql1)
           
           // Loop through the database
@@ -62,7 +62,11 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
               val productQuantity : Int = rs.getInt("productQuantity");
               x = rs.getInt("x")
               y = rs.getInt("y")
-            
+              
+              // create a new inventory object so that the products
+              // can be updated
+              val inventory : Inventory = new Inventory
+              
               // Print orderline
               println("|Product Name: " + productName
                                 + "|Porousware: " + porousware
@@ -71,11 +75,6 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
                 
               // create new order routes
               odrRte.addLocationsToRoute(x, y)
-              
-               // create a new inventory object so that the products
-              // can be updated
-              val inventory : Inventory = new Inventory
-              inventory.updateInventoryCounts(productQuantity, orderIDs)
              
           }
             // Populate routes

@@ -68,7 +68,7 @@ class Inventory(app : WarehouseOrderTrackingApplication) {
   /**
    * Update the Inventory counts
    */
-  def updateInventoryCounts(quantity : Int, products : String) {
+  def updateInventoryCounts(quantity : Int) {
     productQuantity -= quantity
     
     // Create database instance & connection
@@ -78,9 +78,16 @@ class Inventory(app : WarehouseOrderTrackingApplication) {
      try {
          // SQL attributes
        val stmt : Statement = db.getDBConnection().createStatement()
+       val sql1 : String = """SELECT productQuantity FROM inventory"""
+       val rs : ResultSet = stmt.executeQuery(sql1)
        
-       val sql1 : String = "UPDATE inventory SET productQuantity = " + productQuantity + " WHERE Products = " + products
-       stmt.executeUpdate(sql1)
+       // Loop through database elements
+       while (rs next) {
+         
+         // Store database elements into attributes
+         productQuantity = rs getInt("productQuantity")
+
+       }
      }
     catch {
         case e : Throwable => e.printStackTrace

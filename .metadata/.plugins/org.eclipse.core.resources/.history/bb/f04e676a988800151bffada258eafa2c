@@ -71,11 +71,6 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
                 
               // create new order routes
               odrRte.addLocationsToRoute(x, y)
-              
-               // create a new inventory object so that the products
-              // can be updated
-              val inventory : Inventory = new Inventory
-              inventory.updateInventoryCounts(productQuantity, orderIDs)
              
           }
             // Populate routes

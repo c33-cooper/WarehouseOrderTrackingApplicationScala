@@ -32,6 +32,11 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
    */
   def establishOrderLine(orderIDs : String) {
     
+    // create a new inventory object so that the products
+              // can be updated
+              val inventory : Inventory = new Inventory
+              inventory.updateInventoryCounts(productQuantity, orderIDs)
+    
     // Establish the order lines 
     try {
           // Re-initialise the order line database 
@@ -71,11 +76,6 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
                 
               // create new order routes
               odrRte.addLocationsToRoute(x, y)
-              
-               // create a new inventory object so that the products
-              // can be updated
-              val inventory : Inventory = new Inventory
-              inventory.updateInventoryCounts(productQuantity, orderIDs)
              
           }
             // Populate routes
