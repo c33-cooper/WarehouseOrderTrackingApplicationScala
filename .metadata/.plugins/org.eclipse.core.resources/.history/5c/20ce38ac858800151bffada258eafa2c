@@ -1,0 +1,24 @@
+package support;
+
+/**
+ * 
+ * @author callum
+ *
+ */
+public class OrderRoutes {
+
+	// class constructor
+	public OrderRoutes(){
+	}
+	
+	/**
+	 * Show order line routes
+	 */
+	public void showOrderLineRoute(int x, int y) {
+		
+		// Create locations
+		Location location = new Location(x, y);
+		LocationManager.addLocation(location);
+	}
+	
+}

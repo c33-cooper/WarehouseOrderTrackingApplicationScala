@@ -172,7 +172,7 @@ class WarehouseOrderTrackingApplication {
                  // Display exit message & exit the program
                   println("Exiting Program...")                   
                    System.exit(1);
-      
+                
       case _ => println("Nothing chosen..")
     }
   }

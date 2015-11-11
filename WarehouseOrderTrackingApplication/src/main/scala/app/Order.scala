@@ -78,7 +78,7 @@ class Order(app : WarehouseOrderTrackingApplication) {
        val db = new Database
        db createConnection
     
-      //Re-initialise the orderline instance
+      //Re-initialise the order line instance
       val orderLine = new OrderLine
       
       // Prompt the user for the order to select and view

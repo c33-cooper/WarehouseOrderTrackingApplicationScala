@@ -4,6 +4,8 @@
 <fullyQualifiedTypeName name="RouteTracker"/>
 <fullyQualifiedTypeName name="Location"/>
 <fullyQualifiedTypeName name="LocationManager"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.io.Console"/>
 <fullyQualifiedTypeName name="support.Location"/>
 <fullyQualifiedTypeName name="support.LocationManager"/>
 </qualifiedTypeNameHistroy>

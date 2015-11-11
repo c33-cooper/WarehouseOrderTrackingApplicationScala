@@ -4,6 +4,8 @@ import java.sql.Statement
 import java.sql.ResultSet
 import support.Location
 import support.LocationManager
+import support.RouteTracker
+import support.OrderRoutes
 
 /**
  * @author callum
@@ -37,6 +39,9 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
           val db = new Database
           db createConnection
           
+          // Create order routes instance
+          var odrRte = new OrderRoutes
+          
           // Create the SQL attributes
           val stmt : Statement = db.getDBConnection().createStatement()
           
@@ -62,10 +67,15 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
               println("|Product Name: " + productName
                                 + "|Porousware: " + porousware
                                 + "|Product Quantity: " + productQuantity
-                                + "|" + "X: " + x + "|" + "Y: " + y)
-                                
+                                + "|" + "X: " + x + "|" + "Y: " + y)     
+                
+              // create new order routes
+              odrRte.addLocationsToRoute(x, y)
              
           }
+            // Populate routes
+            odrRte.populateRoutes()
+          
              // Close the connection
              rs close
     }
