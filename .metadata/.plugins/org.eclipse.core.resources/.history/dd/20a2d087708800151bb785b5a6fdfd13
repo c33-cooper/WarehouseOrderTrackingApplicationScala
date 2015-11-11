@@ -164,14 +164,14 @@ class WarehouseOrderTrackingApplication {
                   
       case "9" => println(employee.getUsername() +
                   " IS LOGGING OUT...")
-                  
-                  // re-run the app
-                  runApp
       
       case "10" => 
                  // Display exit message & exit the program
                   println("Exiting Program...")                   
                    System.exit(1);
+                  
+      case "11" => 
+                encryption checkMD5(employee.getPassword())
       
       case _ => println("Nothing chosen..")
     }

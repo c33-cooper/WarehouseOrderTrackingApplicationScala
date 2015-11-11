@@ -87,7 +87,7 @@ class Employee(app : WarehouseOrderTrackingApplication) {
     encryption checkMD5(password)
     
     // Run check
-    if (username.equalsIgnoreCase(dbUser) && encryption.getEncryption().equalsIgnoreCase(dbPass)) {
+    if (username.equalsIgnoreCase(dbUser) && password.equalsIgnoreCase(dbPass)) {
       0
     }
     else{

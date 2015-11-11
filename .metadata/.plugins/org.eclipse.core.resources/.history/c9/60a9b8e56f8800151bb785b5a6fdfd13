@@ -83,11 +83,11 @@ class Employee(app : WarehouseOrderTrackingApplication) {
       dbPass : String) : Int = {
     
     // Create an encryption instance
-    val encryption = new Encryption
-    encryption checkMD5(password)
+    var encryption = new Encryption
+    password = encryption.checkMD5(password)
     
     // Run check
-    if (username.equalsIgnoreCase(dbUser) && encryption.getEncryption().equalsIgnoreCase(dbPass)) {
+    if (username.equalsIgnoreCase(dbUser) && password.equalsIgnoreCase(dbPass)) {
       0
     }
     else{

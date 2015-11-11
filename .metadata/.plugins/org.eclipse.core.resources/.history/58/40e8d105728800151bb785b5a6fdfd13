@@ -164,9 +164,6 @@ class WarehouseOrderTrackingApplication {
                   
       case "9" => println(employee.getUsername() +
                   " IS LOGGING OUT...")
-                  
-                  // re-run the app
-                  runApp
       
       case "10" => 
                  // Display exit message & exit the program
