@@ -1,0 +1,241 @@
+package app
+
+import java.sql.Statement
+import java.sql.ResultSet
+
+/**
+ * @author callum
+ */
+class Order(app : WarehouseOrderTrackingApplication) {
+  
+  // Attribute
+  var orderSelector : String = _
+  
+  /**
+   * Overload constructor
+   */
+  def this() = this(new WarehouseOrderTrackingApplication)
+  
+  /**
+   * Default Class constructor
+   */
+  def Order {
+  }
+  
+  /**
+   * Establish the orders table
+   */
+  def establishOrdersFromDatabase {
+    
+    // Create database instance & connection
+     val db = new Database
+     db createConnection
+     
+     // Establish the orders
+     try{
+           // Create the sql attributes
+           val stmt : Statement = db.getDBConnection().createStatement()
+           
+           // SQL attributes
+           val sql1 : String = """SELECT idorders, orderDateCreated,
+           orderVerified, orderTotal, productQuantity, orderStatus 
+           FROM orders"""
+           var rs : ResultSet = stmt.executeQuery(sql1)
+           
+           // Loop through database elements
+           while (rs next) {
+             
+             // Store database elements into attributes
+              val orderID : String = rs.getString("idorders")
+              val orderDateCreated : String = rs.getString("orderDateCreated")
+              val orderVerified : Boolean = rs.getBoolean("orderVerified")
+              val orderTotals : Double = rs.getDouble("orderTotal")
+              val productQuantity : Int = rs.getInt("productQuantity")
+              val orderStatus : String = rs.getString("orderStatus")
+              
+              // Print orders
+              println("Order ID: " + orderID
+                      + "\nOrder Date Created: " + orderDateCreated
+                      + "\nOrder Verified: " + orderVerified
+                      + "\nOrder Total: " + orderTotals + " GBP"
+                      + "\nProduct Quantity: " + productQuantity 
+                      + "\nOrder Status: " + orderStatus + "\n")
+           }
+           // Close the connection
+           rs close
+     }
+      catch {
+        case e : Throwable => e.printStackTrace
+      }
+   }
+  
+  /**
+   * Prompt user to select order to view
+   */
+  def selectOrderToView {
+      
+      // Create database instance & connection
+       val db = new Database
+       db createConnection
+    
+      //Re-initialise the order line instance
+      val orderLine = new OrderLine
+      
+      // Prompt the user for the order to select and view
+      println("ENTER ORDER TO SELECT: ")
+      orderSelector = readLine
+      
+        // Run check of order select against the order ID
+      println("\nCURRENT SELECTED ORDER...")
+      
+      try{
+            // Create a new connection to the database 
+            val stmt : Statement = db.getDBConnection().createStatement()
+            
+            // SQL attributes
+            val sql2 : String = """SELECT idorders, orderDateCreated,
+            orderVerified, orderTotal, productQuantity, orderStatus 
+            FROM orders WHERE idorders = """ + orderSelector
+            
+            // log database into result set
+            var rsSelectedOrder : ResultSet = stmt.executeQuery(sql2)
+            
+            // Loop through the selected orders
+            while (rsSelectedOrder next) {
+              
+                // Store database elements into attributes
+                val orderID : String = rsSelectedOrder.getString("idorders")
+                val orderDateCreated : String = rsSelectedOrder.getString("orderDateCreated")
+                val orderVerified : Boolean = rsSelectedOrder.getBoolean("orderVerified")
+                val orderTotals : Double = rsSelectedOrder.getDouble("orderTotal")
+                val productQuantity : Int = rsSelectedOrder.getInt("productQuantity")
+                val orderStatus : String = rsSelectedOrder.getString("orderStatus")
+                
+                // Print the order lines
+                println("Order ID: " + orderID
+                                    + "\nOrder Date Created: " + orderDateCreated
+                                    + "\nOrder Verified: " + orderVerified
+                                    + "\nOrder Total: " + orderTotals + " GBP"
+                                    + "\nProduct Quantity: " + productQuantity
+                                    + "\nOrder Status: " + orderStatus + "\n")
+                                    
+                // List order lines
+                println("Order Lines: ")
+                orderLine establishOrderLine(orderSelector)
+            }
+            // close the connection
+            rsSelectedOrder close
+      }
+       catch {
+        case e : Throwable => e.printStackTrace
+       }  
+    }
+  
+    /**
+     * Update the status of the order
+     */
+     def updateTheOrderStatus {
+       
+       // Ask user if they want to update the status of the order
+       println("\nType 'PICKED' when the order has been picked and update status...")
+       println("Type 'DISPATCHED' to check out order and update status...")
+       println("Type 'DELIVERED' once confirmation of the delivery has been acknowledged...")
+       val orderStatusChoice = readLine
+       
+       // Run check to see if order wants to be checked out
+       orderStatusChoice match {
+         case "PICKED" => // Pick the order
+                          updatePickedOrdersFromDatabase
+                          
+                          // Display message of picked
+                          println("\nOrder Status has now been changed to PICKED")
+                          
+         case "DISPATCHED" => // Dispatch the order
+                          updateDispatchedOrdersFromDatabase
+                          
+                          // Display message of picked
+                          println("\nOrder Status has now been changed to DISPATCHED")
+                          
+         case "DELIVERED" => // Deliver the order                 
+                         updateDeliveredOrdersFromDatabase
+                         
+                         // Display message of picked
+                          println("\nOrder Status has now been changed to DELIVERED")
+                         
+         case _ =>          // Display default message
+                          println("No orders have been checked out...")      
+       }
+     }
+     
+     /**
+      * Update checked out orders from the database
+      */
+     def updateDispatchedOrdersFromDatabase() {
+       
+       // Create database instance & connection
+       val db = new Database
+       db createConnection
+       
+       // Connect to the order database and update
+       // the checked out orders
+       try {
+             // Create a new connection to the database
+             val stmt : Statement = db.getDBConnection().createStatement()
+             
+             // SQL attributes
+             val sql3 : String = "UPDATE orders SET orderStatus = 'DISPATCHED' WHERE idorders = " + orderSelector;
+             stmt.executeUpdate(sql3)
+       }
+       catch {
+         case e : Throwable => e.printStackTrace
+       }
+     }
+     
+     /**
+      * Update checked out orders from the database
+      */
+     def updatePickedOrdersFromDatabase() {
+       
+       // Create database instance & connection
+       val db = new Database
+       db createConnection
+       
+       // Connect to the order database and update
+       // the checked out orders
+       try {
+             // Create a new connection to the database
+             val stmt : Statement = db.getDBConnection().createStatement()
+             
+             // SQL attributes
+             val sql3 : String = "UPDATE orders SET orderStatus = 'PICKED' WHERE idorders = " + orderSelector;
+             stmt.executeUpdate(sql3)
+       }
+       catch {
+         case e : Throwable => e.printStackTrace
+       }
+     }
+     
+     /**
+      * Update delivered orders from the database
+      */
+     def updateDeliveredOrdersFromDatabase() {
+       
+       // Create database instance & connection
+       val db = new Database
+       db createConnection
+       
+       // Connect to the order database and update
+       // the checked out orders
+       try {
+             // Create a new connection to the database
+             val stmt : Statement = db.getDBConnection().createStatement()
+             
+             // SQL attributes
+             val sql3 : String = "UPDATE orders SET orderStatus = 'DISPATCHED' WHERE idorders = " + orderSelector;
+             stmt.executeUpdate(sql3)
+       }
+       catch {
+         case e : Throwable => e.printStackTrace
+       }
+     }
+  }

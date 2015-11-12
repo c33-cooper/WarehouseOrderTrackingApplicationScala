@@ -39,6 +39,10 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
           val db = new Database
           db createConnection
           
+           // create a new inventory object so that the products
+           // can be updated
+           val inventory : Inventory = new Inventory
+          
           // Create order routes instance
           var odrRte = new OrderRoutes
           
@@ -72,11 +76,8 @@ class OrderLine(app : WarehouseOrderTrackingApplication) {
               // create new order routes
               odrRte.addLocationsToRoute(x, y)
               
-               // create a new inventory object so that the products
-              // can be updated
-              val inventory : Inventory = new Inventory
+              // Update the inventory counts
               inventory.updateInventoryCounts(productQuantity, orderIDs)
-             
           }
             // Populate routes
             odrRte.populateRoutes()
