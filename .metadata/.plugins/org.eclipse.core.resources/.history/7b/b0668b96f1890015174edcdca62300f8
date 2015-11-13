@@ -1,0 +1,13 @@
+/**
+ * Imports
+ */
+import scalafx.application.JFXApp.PrimaryStage
+
+/**
+ * @author callum
+ * @description LoginGUI.scala is the class that sets
+ *              up the interfaces for the user login.
+ */
+class LoginGUI(stage : PrimaryStage) {
+  
+}

@@ -1,0 +1,10 @@
+import scalafx.application.JFXApp.PrimaryStage
+import scalafx.application.JFXApp
+
+/**
+ * @author callum
+ * @description entry point to the application.
+ */
+object Main extends {
+  
+}

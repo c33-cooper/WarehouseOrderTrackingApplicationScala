@@ -30,7 +30,7 @@ public class OrderRoutes {
 		
 		// Initialise population
 		System.out.println("\nTRAVELLING SALESMAN:");
-        Population pop = new Population(50, true);
+        Population pop = new Population(100, true);
         System.out.println("Initial distance: " + pop.getFittest().getDistance() + " Metres");
 
         // Evolve population for 100 generations

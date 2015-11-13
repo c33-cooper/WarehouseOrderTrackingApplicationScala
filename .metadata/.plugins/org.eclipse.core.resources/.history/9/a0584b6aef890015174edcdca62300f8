@@ -1,0 +1,11 @@
+/**
+ * Imports
+ */
+import scalafx.application.JFXApp.PrimaryStage
+
+/**
+ * @author callum
+ */
+class LoginGUI(stage : PrimaryStage) {
+  
+}
