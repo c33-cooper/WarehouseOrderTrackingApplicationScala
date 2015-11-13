@@ -1,0 +1,20 @@
+import scala.collection.mutable.ArrayBuffer
+
+/**
+ * @author callum
+ * @description Employee.scala holds the implementation for
+ *             the users login details.  
+ */
+class Employee(username : String, password : String) {
+  
+  // Employee log on details
+  var employeeUsernames = new ArrayBuffer[String](10)
+  var employeePasswords = new ArrayBuffer[String](10)
+  
+  /**
+   * Establish employees table
+   */
+  def establishEmployeesFromDatabase{
+    
+  }
+}

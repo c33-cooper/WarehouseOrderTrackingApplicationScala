@@ -1,0 +1,9 @@
+
+
+/**
+ * @author callum
+ * @description LoginGUITest.scala is a  
+ */
+class LoginGUITest extends TestBase {
+  
+}

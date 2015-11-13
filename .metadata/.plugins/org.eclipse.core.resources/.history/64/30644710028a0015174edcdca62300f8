@@ -1,0 +1,11 @@
+
+
+/**
+ * @author callum
+ * @description GenericTest.scala is base class for all of 
+ *              my test classes. It has been implemented so
+ *              
+ */
+class GenericTest {
+  
+}

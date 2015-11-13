@@ -1,0 +1,10 @@
+
+
+/**
+ * @author callum
+ * @description DatabaseTest.scala is a scala test for
+ *              the SQL database.
+ */
+class DatabaseTest extends {
+  
+}

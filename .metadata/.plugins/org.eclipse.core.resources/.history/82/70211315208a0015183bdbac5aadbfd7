@@ -1,0 +1,39 @@
+/**
+ * Imports
+ */
+import java.sql.Connection
+import java.sql.DriverManager
+
+/**
+ * @author callum
+ * @description Database.scala is a class that deals with all 
+ *              the generic functionality when using CRUD functions
+ *              from the database. This is to improve higher 
+ *              cohesion and prevent the re-writing of the
+ *              the same code. 
+ */
+class Database {
+  
+  // Database attributes
+  var connection : Connection = _
+  
+  /**
+   * Make a connection to the database
+   */
+  def makeConnection : Connection = {
+    // connection attributes
+    val driver = "com.mysql.jdbc.Driver"
+    val url = "jdbc:mysql://localhost:3306/warehousedatabase"
+    val username = "root"
+    val password = "password"
+    
+    try {
+      // Make the initial connection
+      Class forName(driver)
+      connection = DriverManager getConnection(url, username, password)
+    }
+    catch {
+      case e : Throwable => e printStackTrace // Error handling
+    }
+  }
+}

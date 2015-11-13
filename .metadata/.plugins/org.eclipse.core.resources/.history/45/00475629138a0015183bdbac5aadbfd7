@@ -1,0 +1,25 @@
+
+
+/**
+ * @author callum
+ * @description LoginGUITest.scala is a  test class
+ *              for the interface of the login screen.
+ */
+class LoginGUITest extends TestBase {
+  
+  // Create a LoginGUI object
+  val LoginGUI : LoginGUI = new LoginGUI
+  
+  /**
+   * Class constructor
+   */
+  def LoginGUITest{
+  }
+  
+  /**
+   * Test the scene initialiser
+   */
+  def initSceneTest {
+    
+  }
+}

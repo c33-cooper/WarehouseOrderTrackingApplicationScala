@@ -1,0 +1,25 @@
+/**
+ * Imports
+ */
+import java.sql.Connection
+
+/**
+ * @author callum
+ * @description Database.scala is a class that deals with all 
+ *              the generic functionality when using CRUD functions
+ *              from the database. This is to improve higher 
+ *              cohesion and prevent the re-writing of the
+ *              the same code. 
+ */
+class Database {
+  
+  // Database attributes
+  var connection : Connection = _
+  
+  /**
+   * Make a connection to the database
+   */
+  def makeConnection : Connection = {
+    
+  }
+}

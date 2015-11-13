@@ -18,7 +18,6 @@ class SQLLogin(username : String, password : String) {
     try {
       
       val dbConnection = new Database()
-      
       val connection : Connection = dbConnection connect()
       
       //Creates the statement and runs the select query

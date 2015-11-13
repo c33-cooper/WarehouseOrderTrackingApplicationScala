@@ -18,7 +18,6 @@ import javafx.scene.paint.ImagePattern
 import scalafx.beans.property.StringProperty.sfxStringProperty2jfx
 import scalafx.scene.image.Image.sfxImage2jfx
 import scalafx.scene.paint.Color._
-import javafx.scene.layout.GridPane
 
 /**
  * @author callum
@@ -30,7 +29,7 @@ class LoginGUI(stage : PrimaryStage) {
   // Window attributes
   stage title = "Login User"
   stage width = 300
-  stage height = 400
+  stage height = 200
   
   /**
    * Initialise the scene
@@ -39,10 +38,41 @@ class LoginGUI(stage : PrimaryStage) {
     
     // Create a new scene for the login
     val loginScene = new Scene{
+      
+      // fill the scene Cornflower blue
       fill = CornflowerBlue
+      
+      // content of the scene goes here
+      content = new HBox {
+        // child 1
+        children = Seq(initGridPane)
+      }
     }
     loginScene
   }
+  
+  /**
+   * Initialise login button
+   */
+//  def initLoginButton(usernameField : TextField, passwordField : TextField) : Button = {
+//    
+//    // Create a button so the user can login
+//    val button = new Button
+//    {
+//      // text field
+//      text = ("Log in")
+//      
+//      // Adds an event listener to the button
+//      onAction = (ae : ActionEvent) => {
+//        // Login details
+//        val user : String = usernameField.text getValue
+//        val pass : String = passwordField.text getValue
+//        
+//        // Create a Employee object
+//        val employee = new Employee(user, pass)
+//      }
+//    }
+//  }
   
   /**
    * Create a rectangle for high cohesion
@@ -50,6 +80,20 @@ class LoginGUI(stage : PrimaryStage) {
 //  def createRect : Rectangle = {
 //    
 //  }
+  
+  /**
+   * Create a username text field
+   */
+  val username = new TextField{
+    promptText = ("Username: ")
+  }
+  
+  /**
+   * Create a password text field
+   */
+  val passwordField = new PasswordField{
+    promptText = "Password: "
+  }
   
   /**
    * Initialise grid pane for the scene
@@ -61,9 +105,15 @@ class LoginGUI(stage : PrimaryStage) {
     // within the scene, so that items can be added to the
     // scene. Also creates padding from 
     new GridPane {
-      horizontalGap = 10
-      verticalGap = 10
-      p
+      hgap = 10
+      vgap = 10
+      padding = Insets(20, 100, 10, 10)
+      
+      // UI login features
+      add(new Label("Username: "), 0, 4)
+      add(username, 1, 4)
+      add(new Label("Password: "), 0, 5)
+      add(passwordField, 1, 5)
     }
   }
   

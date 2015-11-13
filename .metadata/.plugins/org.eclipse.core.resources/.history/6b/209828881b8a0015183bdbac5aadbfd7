@@ -1,0 +1,12 @@
+
+
+import java.util.stream.StreamSpliterators.ArrayBuffer
+ * @author callum
+ * @description Employee.scala holds the implementation for
+ *             the users login details.  
+ */
+class Employee() {
+  
+  // Employee log on details
+  var employeeUsernames = new ArrayBuffer[String](10)
+}
