@@ -71,7 +71,8 @@ class LoginGUI(stage : PrimaryStage) {
         // Create a Employee object & login by using an
         // Message Digest encryption
         val md5Encryptiion : MD5Encryption = new MD5Encryption
-        val employee = new Employee(user, md5Encryptiion encryptPassword(pass))
+        md5Encryptiion.encryptPassword(pass)
+        val employee = new Employee(user, pass)
         employee establishEmployeesFromDatabase
        
        // Verify the login
