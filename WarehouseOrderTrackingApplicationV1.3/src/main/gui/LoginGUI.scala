@@ -26,8 +26,10 @@ import scalafx.scene.paint.Color._
  */
 class LoginGUI(stage : PrimaryStage) {
   
-  // Window attributes
-  stage title = "Login User"
+  /**
+   *  Window attributes
+   */
+  stage title = "Warehouse Order Tracking Application V1.3"
   stage width = 300
   stage height = 225
   
@@ -57,8 +59,7 @@ class LoginGUI(stage : PrimaryStage) {
   def initLoginButton(usernameField : TextField, passwordField : TextField) : Button = {
     
     // Create a button so the user can login
-    val button = new Button
-    {
+    val button : Button = new Button {
       // text field
       text = ("Log in")
       
@@ -78,7 +79,8 @@ class LoginGUI(stage : PrimaryStage) {
        if (employee verifyEmployeeLogin) {
          // If verification of employee login has been
          // made, display new logged on window.
-         println("User is now logged in")
+         val menuGUI : MenuGUI = new MenuGUI
+         menuGUI renderMenu
        }
        else {
          failedLoginMessage

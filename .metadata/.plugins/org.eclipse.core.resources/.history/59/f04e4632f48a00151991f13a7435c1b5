@@ -1,0 +1,48 @@
+/**
+ * Imports
+ */
+import scalafx.Includes._
+import scalafx.application.JFXApp.PrimaryStage
+import scalafx.scene.Scene
+import scalafx.scene.control.Label
+import scalafx.scene.layout.GridPane
+import scalafx.geometry.Insets
+import scalafx.scene.layout.HBox
+import scalafx.scene.image.Image
+import scalafx.scene.control.Button
+import scalafx.event.ActionEvent
+import scalafx.scene.control.PasswordField
+import scalafx.scene.control.TextField
+import javafx.scene.shape.Rectangle
+import javafx.scene.paint.ImagePattern
+import scalafx.beans.property.StringProperty.sfxStringProperty2jfx
+import scalafx.scene.image.Image.sfxImage2jfx
+import scalafx.scene.paint.Color._
+
+/**
+ * @author callum
+ * @description MenuGUI.scala is the interface class for the
+ *              menu within the application once the user has
+ *              logged on.
+ */
+class MenuGUI(stage : PrimaryStage) {
+  
+  /**
+   *  Window attributes
+   */
+  stage title = "Menu"
+  stage width = 500
+  stage height = 500
+  
+  /**
+   * Initialise the scene
+   */
+  def initScene : Scene = {
+    
+    // Create a new scene for the menu
+    // Fill the scene with a color
+    fill = CornflowerBlue
+    
+    
+  }
+}
