@@ -1,0 +1,43 @@
+import scala.collection.mutable.ArrayBuffer
+import java.sql.Connection
+import java.sql.SQLException
+
+/**
+ * @author callum
+ * @description Employee.scala holds the implementation for
+ *             the users login details.  
+ */
+class Employee(username : String, password : String) {
+  
+  // Employee log on details
+  var employeeUsernames = new ArrayBuffer[String](10)
+  var employeePasswords = new ArrayBuffer[String](10)
+  
+  /**
+   * Establish employees table
+   */
+  def establishEmployeesFromDatabase{
+    try {
+      // create a database connection
+      val db = new Database
+      val connection : Connection = db makeConnection
+      
+      // Create the statement and run SQL query 
+      val stmt = connection createStatement
+      val resultSet = stmt executeQuery("SELECT employeeUsername, employeePassword FROM employees")
+      
+      // Loop through the db
+      while (resultSet next) {
+        // Store table data into array buffers
+        employeeUsernames += resultSet getString("employeeUsername")
+        employeePasswords += resultSet getString("employeePassword")
+      }
+    } catch {
+      case e : SQLException => e printStackTrace
+    }
+    println(employeeUsernames length)
+  }
+  
+  // Verify employee login
+  def verifyEmployeeLogin
+}

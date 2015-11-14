@@ -29,7 +29,7 @@ class LoginGUI(stage : PrimaryStage) {
   // Window attributes
   stage title = "Login User"
   stage width = 300
-  stage height = 200
+  stage height = 225
   
   /**
    * Initialise the scene
@@ -54,25 +54,44 @@ class LoginGUI(stage : PrimaryStage) {
   /**
    * Initialise login button
    */
-//  def initLoginButton(usernameField : TextField, passwordField : TextField) : Button = {
-//    
-//    // Create a button so the user can login
-//    val button = new Button
-//    {
-//      // text field
-//      text = ("Log in")
-//      
-//      // Adds an event listener to the button
-//      onAction = (ae : ActionEvent) => {
-//        // Login details
-//        val user : String = usernameField.text getValue
-//        val pass : String = passwordField.text getValue
-//        
-//        // Create a Employee object
-//        val employee = new Employee(user, pass)
-//      }
-//    }
-//  }
+  def initLoginButton(usernameField : TextField, passwordField : TextField) : Button = {
+    
+    // Create a button so the user can login
+    val button = new Button
+    {
+      // text field
+      text = ("Log in")
+      
+      // Adds an event listener to the button
+      onAction = (ae : ActionEvent) => {
+        // Login details
+        val user : String = usernameField.text getValue
+        val pass : String = passwordField.text getValue
+        
+        // Create a Employee object & login
+        val employee = new Employee(user, pass)
+       employee establishEmployeesFromDatabase
+       
+       // Verify the login
+       if (employee verifyEmployeeLogin) {
+         // If verification of employee login has been
+         // made, display new logged on window.
+         println("User is now logged in")
+       }
+       else {
+         failedLoginMessage
+       }
+      }
+    }
+    button
+  }
+  
+  /**
+     * Show error message for failed login
+     */
+    def failedLoginMessage() {
+      println("LOG IN FAILED!!")
+    }
   
   /**
    * Create a rectangle for high cohesion
@@ -114,6 +133,7 @@ class LoginGUI(stage : PrimaryStage) {
       add(username, 1, 4)
       add(new Label("Password: "), 0, 5)
       add(passwordField, 1, 5)
+      add(initLoginButton(username, passwordField), 1, 7)
     }
   }
   

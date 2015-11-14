@@ -1,0 +1,16 @@
+
+
+/**
+ * @author callum
+ * @description EmployeeTest.scala is the test class that
+ *              test employee login verification.
+ */
+class EmployeeTest extends TestBase {
+  
+  /**
+   * Test establish employees table
+   */
+  def establishEmployeesFromDatabaseTest{
+    
+  }
+}

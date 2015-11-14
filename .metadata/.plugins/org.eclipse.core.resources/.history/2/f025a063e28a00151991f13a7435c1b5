@@ -1,0 +1,32 @@
+
+
+/**
+ * @author callum
+ * @description EmployeeTest.scala is the test class that
+ *              test employee login verification.
+ */
+class EmployeeTest extends TestBase {
+  
+  /**
+   * Test establish employees table
+   */
+  def establishEmployeesFromDatabaseTest{
+    "Calling establish employees from database" should """generate an array buffer of employee usernames
+     and employee passwords that are not null""" in 
+     {
+        // create an object and run test
+        val employees : Employee = new Employee("_", "_")
+        // Call tests
+        establishEmployeesFromDatabaseTest
+        employees.employeeUsernames should not be (null)
+     }
+      it should "generate a password buffer that is not null" in
+      {
+         // create an object and run test
+        val employees : Employee = new Employee("_", "_")
+        // Call tests
+        establishEmployeesFromDatabaseTest
+        employees.employeePasswords should not be (null)
+      }
+  }
+}
