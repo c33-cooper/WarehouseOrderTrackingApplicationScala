@@ -20,8 +20,8 @@ class DatabaseTest extends TestBase {
     it should "make connection to warehouseDatabase" in
     {
       // create an object
-      val database : Database = new Database
-      database.makeConnection.getMetaData.getURL should be ("jdbc:mysql://localhost:3306/warehousedatabase")
+
+      
     }
   }
   
