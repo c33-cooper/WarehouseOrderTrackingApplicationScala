@@ -1,0 +1,21 @@
+
+
+/**
+ * @author callum
+ * @description MD5EncryptionTest.scala is a test class
+ *              the checks the validity of MD5Encryption.
+ */
+class MD5EncryptionTest extends TestBase{
+  
+  /**
+   * Test encrypt password
+   */
+  def encryptPasswordTest() {
+    "Calling encrypt password" should "return an ecrypted 32 digit hexadecimal number" in
+    {
+      // Create an object and run test
+      
+    }
+  }
+  
+}

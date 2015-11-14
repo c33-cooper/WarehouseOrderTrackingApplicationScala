@@ -1,0 +1,10 @@
+
+
+/**
+ * @author callum
+ * @description MD5EncryptionTest.scala is a test class
+ *              the checks the validity of MD5Encryption.
+ */
+class MD5EncryptionTest extends TestBase{
+  
+}
