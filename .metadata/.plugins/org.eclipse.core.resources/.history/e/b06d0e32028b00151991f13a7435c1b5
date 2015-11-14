@@ -1,0 +1,58 @@
+/**
+ * Imports
+ */
+import scalafx.Includes._
+import scalafx.application.JFXApp.PrimaryStage
+import scalafx.scene.Scene
+import scalafx.scene.Scene.sfxScene2jfx
+import scalafx.stage.Stage.sfxStage2jfx
+import scalafx.scene.layout.{HBox, VBox}
+import scalafx.application.JFXApp.PrimaryStage
+import scalafx.application.JFXApp
+import scalafx.scene.control.{TabPane, Tab}
+import scalafx.geometry.Insets
+import scalafx.scene.paint.Color._
+import scalafx.scene.paint._
+import scalafx.scene.control.Button
+import java.awt.event.ActionEvent
+import scalafx.application.JFXApp.PrimaryStage
+import scalafx.scene.layout.GridPane
+
+/**
+ * @author callum
+ * @description CustomerOrdersGUI.scala is the interface class for the
+ *              customer orders within the application.
+ */
+class CustomerOrdersGUI extends JFXApp{
+  
+  /**
+   * Initialise grid pane for the scene
+   * to allow items to be placed in an
+   * efficient manner.
+   */
+  def initGridPane : GridPane = {
+    
+    // Initialise a grid pane for the scene, the gridpane
+    // basically sets a horizontal gap and a vertical gap
+    // within the scene, so that items can be added to the
+    // scene. Also creates padding from 
+    new GridPane {
+      // Horizontal and vertical gaps are the distance
+      // between items in the layout of the UI.
+      hgap = 10
+      vgap = 10
+      padding = Insets(20, 100, 10, 10)
+      
+      /* UI menu features with X, Y coordinates
+      * for column -----
+      * and row    |
+      * of the     |
+      * grid pane  |
+      *            
+      */
+      add(initViewOrdersButton, 20, 8)
+      add(initViewStockDeliveryOrdersButton(), 20, 9)
+    }
+  }
+  
+}

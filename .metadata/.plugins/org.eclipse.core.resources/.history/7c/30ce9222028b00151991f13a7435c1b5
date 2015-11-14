@@ -1,0 +1,28 @@
+/**
+ * Imports
+ */
+import scalafx.Includes._
+import scalafx.application.JFXApp.PrimaryStage
+import scalafx.scene.Scene
+import scalafx.scene.Scene.sfxScene2jfx
+import scalafx.stage.Stage.sfxStage2jfx
+import scalafx.scene.layout.{HBox, VBox}
+import scalafx.application.JFXApp.PrimaryStage
+import scalafx.application.JFXApp
+import scalafx.scene.control.{TabPane, Tab}
+import scalafx.geometry.Insets
+import scalafx.scene.paint.Color._
+import scalafx.scene.paint._
+import scalafx.scene.control.Button
+import java.awt.event.ActionEvent
+import scalafx.application.JFXApp.PrimaryStage
+import scalafx.scene.layout.GridPane
+
+/**
+ * @author callum
+ * @description CustomerOrdersGUI.scala is the interface class for the
+ *              customer orders within the application.
+ */
+class CustomerOrdersGUI {
+  
+}

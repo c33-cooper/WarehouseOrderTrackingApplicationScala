@@ -13,10 +13,11 @@ import scalafx.scene.control.{TabPane, Tab}
 import scalafx.geometry.Insets
 import scalafx.scene.paint.Color._
 import scalafx.scene.paint._
-import scalafx.scene.control.Button
-import java.awt.event.ActionEvent
+import scalafx.event.ActionEvent
 import scalafx.application.JFXApp.PrimaryStage
 import scalafx.scene.layout.GridPane
+import scalafx.scene.control.{PasswordField, TextField, Label, Button}
+import scalafx.scene.text.Text
 
 /**
  * @author callum
@@ -37,10 +38,12 @@ class MenuGUI extends JFXApp {
       text = ("View Customer Orders")
       minWidth = 225
       minHeight = 150
-//      // Add an event listener to the button
-//      onAction = (ae : ActionEvent) => {
-//        // Do something
-//      }
+      // Add an event listener to the button
+      onAction = (ae : ActionEvent) => {
+        // Create a Customer order GUI and show scene
+        val customerOrderGUI : CustomerOrdersGUI = new CustomerOrdersGUI
+        customerOrderGUI renderCustomerOrders
+      }
     }
     button
   }

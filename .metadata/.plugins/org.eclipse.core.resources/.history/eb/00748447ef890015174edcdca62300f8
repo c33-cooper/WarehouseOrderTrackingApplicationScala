@@ -1,8 +1,0 @@
-/**
- * Imports
- */
-import scalafx.application.JFXApp.PrimaryStage
-
-class LoginGUI(stage : PrimaryStage) {
-  
-}
