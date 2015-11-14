@@ -16,6 +16,7 @@ import scalafx.scene.paint._
 import scalafx.scene.control.Button
 import java.awt.event.ActionEvent
 import scalafx.application.JFXApp.PrimaryStage
+import scalafx.scene.layout.GridPane
 
 /**
  * @author callum
@@ -34,13 +35,63 @@ class MenuGUI extends JFXApp {
     val button : Button = new Button {
       // Text field
       text = ("View Customer Orders")
-      
+      minWidth = 225
+      minHeight = 150
 //      // Add an event listener to the button
 //      onAction = (ae : ActionEvent) => {
 //        // Do something
 //      }
     }
     button
+  }
+  
+   /**
+   * Initialise View Stock delivery orders button
+   */
+  def initViewStockDeliveryOrdersButton() : Button = {
+    
+    // Create a button so the user can view orders
+    val button : Button = new Button {
+      // Text field
+      text = ("View Stock Delivery Orders")
+      minWidth = 225
+      minHeight = 150
+//      // Add an event listener to the button
+//      onAction = (ae : ActionEvent) => {
+//        // Do something
+//      }
+    }
+    button
+  }
+  
+  /**
+   * Initialise grid pane for the scene
+   * to allow items to be placed in an
+   * efficient manner.
+   */
+  def initGridPane : GridPane = {
+    
+    // Initialise a grid pane for the scene, the gridpane
+    // basically sets a horizontal gap and a vertical gap
+    // within the scene, so that items can be added to the
+    // scene. Also creates padding from 
+    new GridPane {
+      // Horizontal and vertical gaps are the distance
+      // between items in the layout of the UI.
+      hgap = 10
+      vgap = 10
+      padding = Insets(20, 100, 10, 10)
+      
+      /* UI menu features with X, Y coordinates
+      * for column -----
+      * and row    |
+      * of the     |
+      * grid pane  |
+      *            
+      */
+      add(initViewOrdersButton, 20, 8)
+      add(initViewStockDeliveryOrdersButton(), 20, 9)
+    }
   }
   
   /**
@@ -57,7 +108,7 @@ class MenuGUI extends JFXApp {
       // Content of the scene goes here
       content = new HBox {
         // Child 1
-        children = Seq(initViewOrdersButton)
+        children = Seq(initGridPane)
       }
     }
     menuScene
@@ -73,7 +124,7 @@ class MenuGUI extends JFXApp {
     stage setScene(initScene)
     stage.show
     stage title = "Warehouse Order Tracking Application V1.3"
-    stage width = 500
-    stage height = 500
+    stage width = 700
+    stage height = 700
   }
 }

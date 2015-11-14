@@ -57,11 +57,13 @@ class LoginGUI(stage : PrimaryStage) {
    * Initialise login button
    */
   def initLoginButton(usernameField : TextField, passwordField : TextField) : Button = {
-    
+
     // Create a button so the user can login
     val button : Button = new Button {
       // text field
       text = ("Log in")
+      minWidth = 100
+      minHeight = 30
       
       // Adds an event listener to the button
       onAction = (ae : ActionEvent) => {
@@ -90,19 +92,23 @@ class LoginGUI(stage : PrimaryStage) {
     button
   }
   
+  def initTestButton : Button ={
+    // Test button
+    val testButton : Button = new Button {
+      onAction = (ae : ActionEvent) => {
+        val menuGUI : MenuGUI = new MenuGUI
+        menuGUI renderMenu
+      }
+    }
+    testButton
+  }
+  
   /**
      * Show error message for failed login
      */
     def failedLoginMessage() {
       println("LOG IN FAILED!!")
     }
-  
-  /**
-   * Create a rectangle for high cohesion
-   */
-//  def createRect : Rectangle = {
-//    
-//  }
   
   /**
    * Create a username text field
@@ -120,6 +126,8 @@ class LoginGUI(stage : PrimaryStage) {
   
   /**
    * Initialise grid pane for the scene
+   * to allow items to be placed in an
+   * efficient manner.
    */
   def initGridPane : GridPane = {
     
@@ -138,6 +146,7 @@ class LoginGUI(stage : PrimaryStage) {
       add(new Label("Password: "), 0, 5)
       add(passwordField, 1, 5)
       add(initLoginButton(username, passwordField), 1, 7)
+      add(initTestButton, 2, 7)
     }
   }
   

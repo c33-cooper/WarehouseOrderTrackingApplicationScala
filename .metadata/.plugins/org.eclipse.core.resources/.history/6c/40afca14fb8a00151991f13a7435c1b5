@@ -1,0 +1,51 @@
+/** @author gwestwater */
+
+package connectors
+
+import java.sql.{Connection, DriverManager, SQLException, ResultSet, Statement}
+
+trait SQLConnector {
+  var conn : Connection = _
+  
+  /** Establishes a connection to the SQL database */
+  def Connect : Boolean = {
+    try{
+      conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/nbgardens", "root", "password")
+      true
+    } catch {
+      case e : SQLException => e.printStackTrace()
+      false
+    }
+  }
+  
+  /** Executes the passed query and returns the result set */
+  def QueryDB(query : String): ResultSet = {
+    val stmt : Statement = getConnection.createStatement
+    val rs : ResultSet = stmt.executeQuery(query)
+    rs
+  }
+  
+  /**
+   * Updates the database using the passed SQL query
+   * @param query : The SQL query that will be executed to update the database
+   */
+  def UpdateDB(query : String){
+    val stmt : Statement = getConnection.createStatement
+    stmt.executeUpdate(query)
+  }
+  
+  /**
+   * Insert a new row into the database using the passed SQL query
+   * @param query : The SQL Query containing the insert function 
+   */
+  def insertDB(query : String){
+    val stmt : Statement = getConnection.createStatement
+    stmt.executeUpdate(query)
+  }
+  
+  /** Disconnects from the passed SQL database connection */
+  def Disconnect = conn.close
+  
+  /** Returns the current connection */
+  def getConnection : Connection = conn
+}
