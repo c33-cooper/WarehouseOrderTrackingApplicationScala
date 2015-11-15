@@ -1,0 +1,20 @@
+/**
+ * Imports
+ */
+import scalafx.beans.property.ObjectProperty
+
+/**
+ * @author callum
+ * @description CustomerOrderEntity.scala is an entity class
+ *              for holding attributes for the customer order
+ */
+class CustomerOrderEntity(val idOrders_ : Int, val orderDateCreated_ : String,
+                          val orderVerified_ : Boolean, val orderTotal_ : Double,
+                          val productQuantity_ : Int, val orderStatus_ : String){
+  
+  // Entity attributes
+  val idOrders = new ObjectProperty[Int](this, "idOrders", idOrders_)
+  val orderDateCreated = new ObjectProperty[String](this, "orderDateCreated", "idOrders_")
+  val orderVerified = new ObjectProperty[Boolean](this, "orderVerified", "orderVerified_")
+  val orderTotal = new ObjectProperty[Double](this, "orderTotal", "orderTotal_")
+}

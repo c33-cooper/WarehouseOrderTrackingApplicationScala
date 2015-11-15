@@ -67,19 +67,19 @@ class CustomerOrdersGUI extends JFXApp{
   /**
    * Create a customer order table to display the orders
    */
-//  def createCustomerOrderTable : Node = {
-//    
-//    // Create a table view of customer orders
-//    val table = new TableView[CustomerOrder](orders) {
-//       columns ++= List{
-//         new TableColumn[CustomerOrder, Int] {
-//           text = "Customer Order ID"
-//           cellValueFactory = { _.value.orderID }
-//           prefWidth = 100
-//         }
-//       } 
-//    }
-//  }
+  def createCustomerOrderTable : Node = {
+    
+    // Create a table view of customer orders
+    val table = new TableView[CustomerOrder](orders) {
+       columns ++= List{
+         new TableColumn[CustomerOrder, Int] {
+           text = "Customer Order ID"
+           cellValueFactory = { _.value.orderID }
+           prefWidth = 100
+         }
+       } 
+    }
+  }
   
   /**
    * Initialise the scene
