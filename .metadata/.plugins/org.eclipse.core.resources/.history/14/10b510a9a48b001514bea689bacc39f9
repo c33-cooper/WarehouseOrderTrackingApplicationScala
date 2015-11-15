@@ -1,0 +1,22 @@
+/**
+ * Imports
+ */
+import scalafx.application.JFXApp.PrimaryStage
+import scalafx.application.JFXApp
+
+/**
+ * @author callum
+ * @description entry point to the application.
+ */
+object Main extends JFXApp{
+ 
+  // Initialise interface objects
+  stage = new PrimaryStage
+  val loginInterface : LoginGUI = new LoginGUI(stage)
+  loginInterface renderLogin
+  
+  val database : Database = new Database
+  println(database.findAllSQLTables("""SELECT idorders, orderDateCreated,
+           orderVerified, orderTotal, productQuantity, orderStatus 
+           FROM orders""").next())
+}

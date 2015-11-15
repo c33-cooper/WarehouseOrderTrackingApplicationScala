@@ -3,6 +3,7 @@
  */
 import scalafx.application.JFXApp.PrimaryStage
 import scalafx.application.JFXApp
+import java.sql.ResultSet
 
 /**
  * @author callum

@@ -3,6 +3,8 @@
  */
 import java.sql.Connection
 import java.sql.DriverManager
+import java.sql.ResultSet
+import java.sql.SQLException
 
 /**
  * @author callum
@@ -45,6 +47,25 @@ class Database {
     // If connection is established, close.
     if (connection != null){
       connection close
+    }
+  }
+  
+  /**
+   * Find a generic SQL table
+   */
+  def findAllSQLTables(query : String) : ResultSet ={
+    
+    try{
+        val connection : Connection = makeConnection
+        val statement = connection createStatement
+        val resultSet = statement executeQuery(query)
+  
+        resultSet
+    }
+    catch 
+    {
+      case e : SQLException => e.printStackTrace
+      null
     }
   }
 }

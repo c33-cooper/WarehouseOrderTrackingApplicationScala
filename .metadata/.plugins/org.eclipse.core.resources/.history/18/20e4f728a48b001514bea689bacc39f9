@@ -1,0 +1,67 @@
+import java.sql.SQLException
+
+/**
+ * @author callum
+ * @description DatabaseTest.scala is a scala test for
+ *              the SQL database.
+ */
+class DatabaseTest extends TestBase {
+  
+  /**
+   * Test the connection to the database
+   */
+  def makeConnectionTest{
+    "Calling make connection" should "return a database connection which is not null" in
+    {
+      // create an object and run test
+      val database : Database = new Database
+      database.makeConnection should not be (null)
+    } 
+    it should "make connection to warehouseDatabase" in
+    {
+      // create an object and run test
+      val database : Database = new Database
+      database.makeConnection.getMetaData.getURL should be ("jdbc:mysql://localhost:3306/warehousedatabase")
+    }
+    it should "match a correct stored username" in
+    {
+      // create an object and run test
+      val database : Database = new Database
+      database.makeConnection.getMetaData.getUserName should be ("root@localhost")
+    }
+  }
+  
+  /**
+   * Test the close connection
+   */
+  def closeConnectionTest{
+    "Calling close connection" should "test the conenction has been closed" in
+    {
+      // Create an object and run test
+      val database : Database = new Database
+      // close the connection
+      database.closeConnection
+      database.connection should be (null)
+    }
+  }
+  
+  /**
+   * Test the find all SQL Tabels
+   */
+  def findAllSQLTablesTest(){
+    "Calling findAllSQLTables" should "return a valid array of data from a generic table" in
+    {
+      // Create an object and run test
+      val database : Database = new Database
+      // Call find all SQL tables
+      database.findAllSQLTables("""SELECT idorders, orderDateCreated,
+           orderVerified, orderTotal, productQuantity, orderStatus 
+           FROM orders""")
+    }
+  }
+  
+  // Do tests
+  makeConnectionTest
+  closeConnectionTest
+  findAllSQLTablesTest
+}

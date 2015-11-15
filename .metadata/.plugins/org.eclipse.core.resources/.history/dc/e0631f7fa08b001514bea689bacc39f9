@@ -1,0 +1,7 @@
+import javafx.beans.property.ObjectProperty
+
+/**
+ * @author callum
+ */
+class CustomerOrder {
+}
