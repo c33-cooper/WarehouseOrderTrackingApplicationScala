@@ -1,0 +1,16 @@
+
+
+/**
+ * @author callum
+ * @description CustomerOrderTest.scala is the test class for
+ *              CustomerOrder.scala
+ */
+class CustomerOrderTest extends TestBase{
+  
+  /**
+   * Test establish customer orders
+   */
+  def establishCustomerOrdersTest {
+    "Calling Establish Customer Orders"
+  }
+}

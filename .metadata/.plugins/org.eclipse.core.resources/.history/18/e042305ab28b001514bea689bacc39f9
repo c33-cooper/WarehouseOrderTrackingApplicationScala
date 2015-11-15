@@ -1,0 +1,47 @@
+/**
+ * Imports
+ */
+import javafx.beans.property.ObjectProperty
+import scalafx.collections.ObservableBuffer
+import java.sql.ResultSet
+
+/**
+ * @author callum
+ * @description CustomerOrder.scala is the class that holds
+ *              the customer order functionality for the 
+ *              applciation.
+ */
+class CustomerOrder {
+  
+  // Create a database object
+  val database : Database = new Database
+  
+  /**
+   * Establish all the customer orders from the
+   * customer orders database table.
+   */
+  def establishCustomerOrders : ObservableBuffer = {
+    
+    // Create an array of customer orders
+    val customerOrders : ObservableBuffer[CustomerOrderEntity] = 
+      new ObservableBuffer[CustomerOrderEntity]()
+      
+    /* 
+     * Create a local result set to pull data from the generic
+     * database class and store locally. This can be considered
+     * as a collection of data that has been pulled from the
+     * customer order table.
+     * 
+     */
+     val rs : ResultSet = database.findAllSQLTables("""SELECT idorders, orderDateCreated,
+           orderVerified, orderTotal, productQuantity, orderStatus 
+           FROM orders""")
+           
+    // Loop through result set
+     while(rs next){
+       // Add result set to customer orders array
+       customerOrders += new CustomerOrder(rs.getInt(1), rs.getString(2), rs.getBoolean(3),
+           rs.getDouble(4), rs.getInt(5), rs.getString(6))
+     }
+  }
+}

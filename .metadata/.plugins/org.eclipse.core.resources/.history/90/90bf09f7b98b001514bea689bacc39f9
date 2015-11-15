@@ -1,0 +1,21 @@
+/**
+ * Imports
+ */
+import scalafx.application.JFXApp.PrimaryStage
+import scalafx.application.JFXApp
+import java.sql.ResultSet
+
+/**
+ * @author callum
+ * @description entry point to the application.
+ */
+object Main extends JFXApp{
+ 
+  // Initialise interface objects
+  stage = new PrimaryStage
+  val loginInterface : LoginGUI = new LoginGUI(stage)
+  loginInterface renderLogin
+  
+  val customerOrder : CustomerOrder = new CustomerOrder
+    println(customerOrder.establishCustomerOrders.apply(1).idOrders_ - 1)
+}

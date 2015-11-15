@@ -1,0 +1,18 @@
+import javafx.beans.property.ObjectProperty
+
+/**
+ * @author callum
+ * @description CustomerOrder.scala is the class that holds
+ *              the customer order functionality for the 
+ *              applciation.
+ */
+class CustomerOrder {
+  
+  // Create a database object
+  val database : Database = new Database
+  
+  /**
+   * Establish all the customer orders from the
+   * customer orders database table.
+   */
+}

@@ -1,0 +1,25 @@
+import javafx.beans.property.ObjectProperty
+import scalafx.collections.ObservableBuffer
+
+/**
+ * @author callum
+ * @description CustomerOrder.scala is the class that holds
+ *              the customer order functionality for the 
+ *              applciation.
+ */
+class CustomerOrder {
+  
+  // Create a database object
+  val database : Database = new Database
+  
+  /**
+   * Establish all the customer orders from the
+   * customer orders database table.
+   */
+  def establishCustomerOrders : ObservableBuffer = {
+    
+    // Create an array of customer orders
+    val customerOrders : ObservableBuffer[CustomerOrderEntity] = 
+      new ObservableBuffer[CustomerOrderEntity]()
+  }
+}

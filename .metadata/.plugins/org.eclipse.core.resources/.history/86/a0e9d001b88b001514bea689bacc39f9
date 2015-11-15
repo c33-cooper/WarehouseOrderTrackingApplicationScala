@@ -1,0 +1,30 @@
+
+
+/**
+ * @author callum
+ * @description CustomerOrderTest.scala is the test class for
+ *              CustomerOrder.scala
+ */
+class CustomerOrderTest extends TestBase{
+  
+  /**
+   * Test establish customer orders
+   */
+  def establishCustomerOrdersTest {
+    "Calling Establish Customer Orders" should "return an Observable Buffer of orders that is not null" in
+    {
+      // Create an object and run test
+      val customerOrder : CustomerOrder = new CustomerOrder
+      customerOrder.establishCustomerOrders should not be (null)
+    }
+    it should "return an Observable Buffer of length that matches Customer Orders Table"
+    {
+      // Create an object and run test
+      val customerOrder : CustomerOrder = new CustomerOrder
+      customerOrder.establishCustomerOrders().length should be (5)
+    }
+  }
+  
+  // Run tests
+  establishCustomerOrdersTest
+}
