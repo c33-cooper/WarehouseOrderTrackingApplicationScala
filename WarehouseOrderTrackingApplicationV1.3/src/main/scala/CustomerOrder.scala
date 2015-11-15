@@ -9,7 +9,7 @@ import java.sql.ResultSet
  * @author callum
  * @description CustomerOrder.scala is the class that holds
  *              the customer order functionality for the 
- *              applciation.
+ *              application.
  */
 class CustomerOrder {
   

@@ -19,7 +19,7 @@ import scalafx.application.JFXApp.PrimaryStage
 import scalafx.scene.layout.GridPane
 import scalafx.scene.Node
 import scalafx.scene.control.TableColumn._
-import scalafx.scene.control.{TableCell, TableColumn, TableView}
+import scalafx.scene.control.{ComboBox, Button, TextField, TableView, TableColumn}
 import scalafx.collections.ObservableBuffer
 
 /**
@@ -32,9 +32,51 @@ class CustomerOrdersGUI extends JFXApp{
   /**
    * Customer orders attributes
    */
-  val orders = ObservableBuffer[CustomerOrder](
-      new CustomerOrder())
+   var currentCustOrderID : Int = 0
   
+   // Id Orders column
+  val idOrdersCol = new TableColumn[CustomerOrderEntity, Int]
+    {
+      text = "Customer Order ID"
+      cellValueFactory = {_.value.idOrders}
+      prefWidth = 150
+    }
+   // Order date created column
+   val orderDateCreatedCol = new TableColumn[CustomerOrderEntity, String]
+    {
+      text = "Order Date Created"
+      cellValueFactory = {_.value.orderDateCreated}
+      prefWidth = 130
+    }
+   // Order verified column
+   val orderVerifiedCol = new TableColumn[CustomerOrderEntity, Boolean]
+    {
+      text = "Order Verified"
+      cellValueFactory = {_.value.orderVerified}
+      prefWidth = 130
+    }
+   // Order total column
+   val orderTotalCol = new TableColumn[CustomerOrderEntity, Double]
+    {
+      text = "Order Total"
+      cellValueFactory = {_.value.orderTotal}
+      prefWidth = 130
+    }
+   // Product Quantity column
+   val productQuantityCol = new TableColumn[CustomerOrderEntity, Int]
+    {
+      text = "Product Quantity"
+      cellValueFactory = {_.value.productQuantity}
+      prefWidth = 120
+    }
+   // Order Status column
+   val orderStatusCol = new TableColumn[CustomerOrderEntity, String]
+    {
+      text = "Order Status"
+      cellValueFactory = {_.value.orderStatus}
+      prefWidth = 130
+    }
+   
   /**
    * Initialise grid pane for the scene
    * to allow items to be placed in an
@@ -60,26 +102,68 @@ class CustomerOrdersGUI extends JFXApp{
       * grid pane  |
       *            
       */
-      
     }
   }
   
   /**
    * Create a customer order table to display the orders
    */
-//  def createCustomerOrderTable : Node = {
-//    
-//    // Create a table view of customer orders
-//    val table = new TableView[CustomerOrder](orders) {
-//       columns ++= List{
-//         new TableColumn[CustomerOrder, Int] {
-//           text = "Customer Order ID"
-//           cellValueFactory = { _.value.orderID }
-//           prefWidth = 100
-//         }
-//       } 
-//    }
-//  }
+  def createCustomerOrderTable : Node = {
+    
+    // Create customer orders table
+    val customerOrders : CustomerOrder = new CustomerOrder
+    val orders : ObservableBuffer[CustomerOrderEntity] = customerOrders.establishCustomerOrders
+    
+    // Generate tables with entities
+    val table = new TableView[CustomerOrderEntity](orders){
+      // Generate the table columns
+    columns ++= (List(new TableColumn[CustomerOrderEntity, Int]
+    {
+      text = "Customer Order ID"
+      cellValueFactory = {_.value.idOrders}
+      prefWidth = 150
+    }, new TableColumn[CustomerOrderEntity, String]
+    {
+      text = "Order Date Created"
+      cellValueFactory = {_.value.orderDateCreated}
+      prefWidth = 130
+    }, new TableColumn[CustomerOrderEntity, Boolean]
+    {
+      text = "Order Verified"
+      cellValueFactory = {_.value.orderVerified}
+      prefWidth = 130
+    }, new TableColumn[CustomerOrderEntity, Double]
+    {
+      text = "Order Total"
+      cellValueFactory = {_.value.orderTotal}
+      prefWidth = 130
+    }, new TableColumn[CustomerOrderEntity, Int]
+    {
+      text = "Product Quantity"
+      cellValueFactory = {_.value.productQuantity}
+      prefWidth = 120
+    }, new TableColumn[CustomerOrderEntity, String]
+    {
+      text = "Order Status"
+      cellValueFactory = {_.value.orderStatus}
+      prefWidth = 130
+    }))
+    }
+  
+    table.onMouseClicked = handle
+    {
+      try
+      {
+        currentCustOrderID = table.getSelectionModel.selectedItemProperty.get.idOrders.value
+      }
+      catch
+      {
+        case e : Throwable => println()
+        //e.printStackTrace  //NullPointerException => e printStackTrace
+      } 
+    }
+    table
+  }
   
   /**
    * Initialise the scene
@@ -95,7 +179,7 @@ class CustomerOrdersGUI extends JFXApp{
       // Content of the scene goes here
       content = new HBox {
         // Child 1
-        children = Seq(initGridPane)
+        children = Seq(createCustomerOrderTable)
       }
     }
     menuScene
