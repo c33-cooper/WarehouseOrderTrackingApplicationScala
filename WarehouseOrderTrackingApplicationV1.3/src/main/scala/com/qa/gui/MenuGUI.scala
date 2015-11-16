@@ -28,6 +28,30 @@ import scalafx.scene.text.Text
 class MenuGUI extends JFXApp {
   
   /**
+   * Initialise Log out button
+   */
+  def initLogOutButton() : Button = {
+    
+    // Create a return to login button so the user can return to login
+    val button : Button = new Button {
+      // Text field
+      text = ("Log Out")
+      minWidth = 225
+      minHeight = 150
+      // Add an event listener to the button
+      onAction = (ae : ActionEvent) => {
+        // Create a new primary stage 
+        stage = new PrimaryStage
+  
+        // Create a logout instance
+        val loginGUI : LoginGUI = new LoginGUI(stage)
+        loginGUI renderLogin
+      }
+    }
+    button
+  }
+  
+  /**
    * Initialise View orders button
    */
   def initViewOrdersButton() : Button = {
@@ -94,6 +118,7 @@ class MenuGUI extends JFXApp {
       */
       add(initViewOrdersButton, 20, 8)
       add(initViewStockDeliveryOrdersButton(), 20, 9)
+      add(initLogOutButton, 20, 10)
     }
   }
   

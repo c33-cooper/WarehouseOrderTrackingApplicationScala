@@ -21,6 +21,7 @@ import scalafx.scene.Node
 import scalafx.scene.control.TableColumn._
 import scalafx.scene.control.{ComboBox, Button, TextField, TableView, TableColumn}
 import scalafx.collections.ObservableBuffer
+import scalafx.application.JFXApp.PrimaryStage
 
 /**
  * @author callum
@@ -59,7 +60,8 @@ class CustomerOrdersGUI extends JFXApp{
       * grid pane  |
       *            
       */
-      add(initHomeButton, 20, 8)
+      add(initHomeButton, 1, 0)
+      add(initLogOutButton, 1, 1)
     }
   }
    
@@ -84,6 +86,31 @@ class CustomerOrdersGUI extends JFXApp{
      }
      button
    }
+   
+   /**
+    * Initialise a logout button
+    */
+   def initLogOutButton : Button = {
+     
+     // Create a button so the user can view orders
+     val button : Button = new Button {
+       // Text field
+       text = ("Log Out")
+       minWidth = 100
+       minHeight = 100
+       
+       // Add an event listener to the button
+       onAction = (ae : ActionEvent) => {
+         // Create a new stage
+         stage = new PrimaryStage
+         
+         // Create a menu gui and show scene
+         val logInGUI : LoginGUI = new LoginGUI(stage)
+         logInGUI renderLogin
+       }
+     }
+     button
+   }
   
   /**
    * Create a customer order table to display the orders
@@ -101,32 +128,32 @@ class CustomerOrdersGUI extends JFXApp{
     {
       text = "Customer Order ID"
       cellValueFactory = {_.value.idOrders}
-      prefWidth = 150
+      prefWidth = 130
     }, new TableColumn[CustomerOrderEntity, String]
     {
       text = "Order Date Created"
       cellValueFactory = {_.value.orderDateCreated}
-      prefWidth = 130
+      prefWidth = 110
     }, new TableColumn[CustomerOrderEntity, Boolean]
     {
       text = "Order Verified"
       cellValueFactory = {_.value.orderVerified}
-      prefWidth = 130
+      prefWidth = 110
     }, new TableColumn[CustomerOrderEntity, Double]
     {
       text = "Order Total"
       cellValueFactory = {_.value.orderTotal}
-      prefWidth = 130
+      prefWidth = 110
     }, new TableColumn[CustomerOrderEntity, Int]
     {
       text = "Product Quantity"
       cellValueFactory = {_.value.productQuantity}
-      prefWidth = 120
+      prefWidth = 100
     }, new TableColumn[CustomerOrderEntity, String]
     {
       text = "Order Status"
       cellValueFactory = {_.value.orderStatus}
-      prefWidth = 130
+      prefWidth = 110
     }))
     }
   
@@ -174,7 +201,7 @@ class CustomerOrdersGUI extends JFXApp{
     stage setScene(initScene)
     stage.show
     stage title = "Warehouse Order Tracking Application V1.3"
-    stage width = 805
-    stage height = 500
+    stage width = 910
+    stage height = 440
   }
 }
