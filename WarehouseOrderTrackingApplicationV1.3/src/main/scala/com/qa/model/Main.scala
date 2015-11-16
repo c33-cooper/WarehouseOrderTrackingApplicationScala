@@ -1,9 +1,11 @@
 /**
  * Imports
  */
+package com.qa.model
+
 import scalafx.application.JFXApp.PrimaryStage
 import scalafx.application.JFXApp
-import java.sql.ResultSet
+import com.qa.gui.LoginGUI
 
 /**
  * @author callum

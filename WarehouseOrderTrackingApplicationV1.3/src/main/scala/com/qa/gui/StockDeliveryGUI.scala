@@ -7,37 +7,33 @@ import scalafx.Includes._
 import scalafx.application.JFXApp.PrimaryStage
 import scalafx.scene.Scene
 import scalafx.scene.Scene.sfxScene2jfx
-import scalafx.stage.Stage.sfxStage2jfx
-import scalafx.scene.layout.{HBox, VBox}
-import scalafx.application.JFXApp.PrimaryStage
+import scalafx.scene.layout.HBox
 import scalafx.application.JFXApp
-import scalafx.scene.control.{TabPane, Tab}
 import scalafx.geometry.Insets
 import scalafx.scene.paint.Color._
 import scalafx.scene.paint._
 import scalafx.scene.control.Button
 import scalafx.event.ActionEvent
-import scalafx.application.JFXApp.PrimaryStage
 import scalafx.scene.layout.GridPane
 import scalafx.scene.Node
 import scalafx.scene.control.TableColumn._
-import scalafx.scene.control.{ComboBox, Button, TextField, TableView, TableColumn}
+import scalafx.scene.control.{Button, TableView}
 import scalafx.collections.ObservableBuffer
-import scalafx.application.JFXApp.PrimaryStage
-import com.qa.model.CustomerOrder
-import com.qa.entities.CustomerOrderEntity
+import com.qa.entities.StockDeliveryOrderEntity
+import com.qa.model.StockDeliveryOrders
+import scalafx.scene.control.TableColumn
 
 /**
  * @author callum
  * @description CustomerOrdersGUI.scala is the interface class for the
  *              customer orders within the application.
  */
-class CustomerOrdersGUI extends JFXApp{
+class StockDeliveryOrder extends JFXApp{
   
   /**
    * Customer orders attributes
    */
-   var currentCustOrderID : Int = 0
+   var currentSDOrderID : Int = 0
    
   /**
    * Initialise grid pane for the scene
@@ -106,7 +102,7 @@ class CustomerOrdersGUI extends JFXApp{
        // Add an event listener to the button
        onAction = (ae : ActionEvent) => {
          // Create a new stage
-         stage = new PrimaryStage
+         val stage = new PrimaryStage
          
          // Create a menu gui and show scene
          val logInGUI : LoginGUI = new LoginGUI(stage)
@@ -117,47 +113,22 @@ class CustomerOrdersGUI extends JFXApp{
    }
   
   /**
-   * Create a customer order table to display the orders
+   * Create a stock delivery table to display the orders
    */
-  def createCustomerOrderTable : Node = {
+  def createStockDeliveryTable : Node = {
     
-    // Create customer orders table
-    val customerOrders : CustomerOrder = new CustomerOrder
-    val orders : ObservableBuffer[CustomerOrderEntity] = customerOrders.establishCustomerOrders
+    // Create stock delivery orders table
+    val stockDeliveryOrders : StockDeliveryOrders = new StockDeliveryOrders
+    val orders : ObservableBuffer[StockDeliveryOrderEntity] = stockDeliveryOrders.establishStockDeliveryOrders()
     
     // Generate tables with entities
-    val table = new TableView[CustomerOrderEntity](orders){
+    val table = new TableView[StockDeliveryOrderEntity](orders){
       // Generate the table columns
-    columns ++= (List(new TableColumn[CustomerOrderEntity, Int]
+    columns ++= (List(new TableColumn[StockDeliveryOrderEntity, Int]
     {
-      text = "Customer Order ID"
-      cellValueFactory = {_.value.idOrders}
+      text = "Stock Delivery Order ID"
+      cellValueFactory = {_.value.idStockDeliveryOrders}
       prefWidth = 130
-    }, new TableColumn[CustomerOrderEntity, String]
-    {
-      text = "Order Date Created"
-      cellValueFactory = {_.value.orderDateCreated}
-      prefWidth = 110
-    }, new TableColumn[CustomerOrderEntity, Boolean]
-    {
-      text = "Order Verified"
-      cellValueFactory = {_.value.orderVerified}
-      prefWidth = 110
-    }, new TableColumn[CustomerOrderEntity, Double]
-    {
-      text = "Order Total"
-      cellValueFactory = {_.value.orderTotal}
-      prefWidth = 110
-    }, new TableColumn[CustomerOrderEntity, Int]
-    {
-      text = "Product Quantity"
-      cellValueFactory = {_.value.productQuantity}
-      prefWidth = 100
-    }, new TableColumn[CustomerOrderEntity, String]
-    {
-      text = "Order Status"
-      cellValueFactory = {_.value.orderStatus}
-      prefWidth = 110
     }))
     }
   
@@ -165,7 +136,7 @@ class CustomerOrdersGUI extends JFXApp{
     {
       try
       {
-        currentCustOrderID = table.getSelectionModel.selectedItemProperty.get.idOrders.value
+        currentSDOrderID = table.getSelectionModel.selectedItemProperty.get.idStockDeliveryOrders.value
       }
       catch
       {
@@ -189,7 +160,7 @@ class CustomerOrdersGUI extends JFXApp{
       // Content of the scene goes here
       content = new HBox {
         // Child 1
-        children = Seq(initGridPane, createCustomerOrderTable)
+        children = Seq(initGridPane, createStockDeliveryTable)
       }
     }
     menuScene
@@ -201,7 +172,7 @@ class CustomerOrdersGUI extends JFXApp{
   def renderCustomerOrders : Unit = {
     // Create a new stage for the menu and set
     // the scene
-    stage = new PrimaryStage
+    val stage = new PrimaryStage
     stage setScene(initScene)
     stage.show
     stage title = "Warehouse Order Tracking Application V1.3"

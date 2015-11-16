@@ -1,7 +1,5 @@
-/**
- * Imports
- */
-import javafx.beans.property.ObjectProperty
+package com.qa.model
+
 import scalafx.collections.ObservableBuffer
 import java.sql.ResultSet
 import com.qa.entities.StockDeliveryOrderEntity
@@ -11,7 +9,7 @@ import com.qa.entities.StockDeliveryOrderEntity
  * @description StockDeliveryOrder.scala is the class that holds
  *              the purchase orders functionality for the application.
  */
-class StockDeliveryOrder {
+class StockDeliveryOrders {
   
   // Create a database object
   val database : Database = new Database
@@ -30,7 +28,7 @@ class StockDeliveryOrder {
      * Create a local result set to pull data from the generic
      * database class and store locally. This can be considered
      * as a collection of data that has been pulled from the
-     * customer order table.
+     * stock delivery order table.
      * 
      */
      val rs : ResultSet = database.findAllSQLTables("""SELECT idstockdeliveryorders, stockDeliveryDateReceived,
@@ -42,8 +40,8 @@ class StockDeliveryOrder {
     // Loop through result set
      while(rs next){
        // Add result set to customer orders array
-      // stockDeliveryOrders += new StockDeliveryOrderEntity(rs.getInt(1), rs.getString(2), rs.getString(3),
-      //     rs.getDouble(4), rs.getInt(5), rs.getString(6))
+       stockDeliveryOrders += new StockDeliveryOrderEntity(rs.getInt(1), rs.getString(2), rs.getString(3),
+           rs.getString(4), rs.getString(5), rs.getString(6), rs.getString(7), rs.getString(8))
      }
     
     // close the connection to the database

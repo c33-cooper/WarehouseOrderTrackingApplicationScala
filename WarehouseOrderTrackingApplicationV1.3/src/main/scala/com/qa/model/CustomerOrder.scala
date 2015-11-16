@@ -1,12 +1,12 @@
-/**
- * Imports
- */
-import javafx.beans.property.ObjectProperty
+package com.qa.model
+
 import scalafx.collections.ObservableBuffer
 import java.sql.ResultSet
+import com.qa.entities.CustomerOrderEntity
 
 /**
- * @author callum
+ * @autimport com.qa.model.Database
+hor callum
  * @description CustomerOrder.scala is the class that holds
  *              the customer order functionality for the 
  *              application.

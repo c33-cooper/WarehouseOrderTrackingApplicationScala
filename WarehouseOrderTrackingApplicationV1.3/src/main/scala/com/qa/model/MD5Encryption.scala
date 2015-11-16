@@ -1,3 +1,5 @@
+package com.qa.model
+
 import java.security.MessageDigest
 
 /**

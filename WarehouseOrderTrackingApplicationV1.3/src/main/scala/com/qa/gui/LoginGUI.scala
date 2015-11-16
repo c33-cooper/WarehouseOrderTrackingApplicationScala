@@ -1,5 +1,7 @@
+package com.qa.gui
+
 /**
- * Imports
+ ** Imports
  */
 import scalafx.Includes._
 import scalafx.application.JFXApp.PrimaryStage
@@ -18,6 +20,8 @@ import javafx.scene.paint.ImagePattern
 import scalafx.beans.property.StringProperty.sfxStringProperty2jfx
 import scalafx.scene.image.Image.sfxImage2jfx
 import scalafx.scene.paint.Color._
+import com.qa.model.MD5Encryption
+import com.qa.model.Employee
 
 /**
  * @author callum

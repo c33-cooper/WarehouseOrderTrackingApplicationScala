@@ -1,23 +1,18 @@
-/**
- * Imports
- */
-import scalafx.Includes._
+package com.qa.gui
+
+import scalafx.Includes.eventClosureWrapperWithParam
+import scalafx.Includes.jfxActionEvent2sfx
+import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
+import scalafx.event.ActionEvent
+import scalafx.geometry.Insets
 import scalafx.scene.Scene
 import scalafx.scene.Scene.sfxScene2jfx
-import scalafx.stage.Stage.sfxStage2jfx
-import scalafx.scene.layout.{HBox, VBox}
-import scalafx.application.JFXApp.PrimaryStage
-import scalafx.application.JFXApp
-import scalafx.scene.control.{TabPane, Tab}
-import scalafx.geometry.Insets
-import scalafx.scene.paint.Color._
-import scalafx.scene.paint._
-import scalafx.event.ActionEvent
-import scalafx.application.JFXApp.PrimaryStage
+import scalafx.scene.control.Button
 import scalafx.scene.layout.GridPane
-import scalafx.scene.control.{PasswordField, TextField, Label, Button}
-import scalafx.scene.text.Text
+import scalafx.scene.layout.HBox
+import scalafx.scene.paint.Color.CornflowerBlue
+import scalafx.stage.Stage.sfxStage2jfx
 
 /**
  * @author callum

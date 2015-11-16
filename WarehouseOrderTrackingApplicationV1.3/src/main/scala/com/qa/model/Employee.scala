@@ -1,5 +1,8 @@
+package com.qa.model
+
 import scala.collection.mutable.ArrayBuffer
 import java.sql.Connection
+import com.qa.model.Database
 import java.sql.SQLException
 
 /**

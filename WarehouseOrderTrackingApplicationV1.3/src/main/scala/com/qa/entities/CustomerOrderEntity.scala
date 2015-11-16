@@ -1,9 +1,6 @@
-/**
- * Imports
- */
+package com.qa.entities
+
 import scalafx.beans.property.ObjectProperty
-import scalafx.beans.property.BooleanProperty
-import scalafx.beans.property.DoubleProperty
 
 /**
  * @author callum
