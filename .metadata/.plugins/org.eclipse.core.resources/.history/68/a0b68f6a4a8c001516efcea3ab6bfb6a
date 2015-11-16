@@ -59,7 +59,6 @@ class CustomerOrdersGUI extends JFXApp{
       * grid pane  |
       *            
       */
-      add(initHomeButton, 20, 8)
     }
   }
    
