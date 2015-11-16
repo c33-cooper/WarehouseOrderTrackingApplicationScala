@@ -42,8 +42,8 @@ class StockDeliveryOrder {
     // Loop through result set
      while(rs next){
        // Add result set to customer orders array
-       stockDeliveryOrders += new StockDeliveryOrderEntity(rs.getInt(1), rs.getString(2), rs.getString(3),
-           rs.getDouble(4), rs.getInt(5), rs.getString(6))
+      // stockDeliveryOrders += new StockDeliveryOrderEntity(rs.getInt(1), rs.getString(2), rs.getString(3),
+      //     rs.getDouble(4), rs.getInt(5), rs.getString(6))
      }
     
     // close the connection to the database
