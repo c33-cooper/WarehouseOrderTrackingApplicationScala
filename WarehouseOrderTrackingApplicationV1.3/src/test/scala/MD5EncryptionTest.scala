@@ -1,5 +1,7 @@
 
 
+import com.qa.model.MD5Encryption
+
 /**
  * @author callum
  * @description MD5EncryptionTest.scala is a test class

@@ -1,5 +1,6 @@
 import java.sql.SQLException
 import java.sql.ResultSet
+import com.qa.model.Database
 
 /**
  * @author callum

@@ -1,5 +1,7 @@
 
 
+import com.qa.model.CustomerOrder
+
 /**
  * @author callum
  * @description CustomerOrderTest.scala is the test class for

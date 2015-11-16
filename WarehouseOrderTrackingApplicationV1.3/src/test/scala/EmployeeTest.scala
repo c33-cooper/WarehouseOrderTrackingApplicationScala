@@ -1,5 +1,7 @@
 
 
+import com.qa.model.Employee
+
 /**
  * @author callum
  * @description EmployeeTest.scala is the test class that
