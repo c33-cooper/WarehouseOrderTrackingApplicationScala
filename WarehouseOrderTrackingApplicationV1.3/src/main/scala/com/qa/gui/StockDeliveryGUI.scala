@@ -28,7 +28,7 @@ import scalafx.scene.control.TableColumn
  * @description CustomerOrdersGUI.scala is the interface class for the
  *              customer orders within the application.
  */
-class StockDeliveryOrder extends JFXApp{
+class StockDeliveryGUI extends JFXApp{
   
   /**
    * Customer orders attributes
@@ -129,6 +129,41 @@ class StockDeliveryOrder extends JFXApp{
       text = "Stock Delivery Order ID"
       cellValueFactory = {_.value.idStockDeliveryOrders}
       prefWidth = 130
+    }, new TableColumn[StockDeliveryOrderEntity, String]
+    {
+      text = "Stock Delivery Date Received"
+      cellValueFactory = {_.value.stockDeliverOrderDateReceived}
+      prefWidth = 130
+    }, new TableColumn[StockDeliveryOrderEntity, String]
+    {
+      text = "Supplier Name"
+      cellValueFactory = {_.value.supplierName}
+      prefWidth = 130
+    }, new TableColumn[StockDeliveryOrderEntity, String]
+    {
+      text = "Supplier Telephone Number"
+      cellValueFactory = {_.value.supplierTelephoneNumber}
+      prefWidth = 130
+    }, new TableColumn[StockDeliveryOrderEntity, String]
+    {
+      text = "Supplier Email"
+      cellValueFactory = {_.value.supplierEmail}
+      prefWidth = 130
+    }, new TableColumn[StockDeliveryOrderEntity, String]
+    {
+      text = "Supplier Method of Contact"
+      cellValueFactory = {_.value.supplierMethodOfContact}
+      prefWidth = 130
+    }, new TableColumn[StockDeliveryOrderEntity, String]
+    {
+      text = "Stock Address"
+      cellValueFactory = {_.value.supplierAddress}
+      prefWidth = 130
+    }, new TableColumn[StockDeliveryOrderEntity, String]
+    {
+      text = "Order Status"
+      cellValueFactory = {_.value.orderStatus}
+      prefWidth = 130
     }))
     }
   
@@ -169,14 +204,14 @@ class StockDeliveryOrder extends JFXApp{
   /**
    * Show the menu interface
    */
-  def renderCustomerOrders : Unit = {
+  def renderStockDeliveryOrders : Unit = {
     // Create a new stage for the menu and set
     // the scene
     val stage = new PrimaryStage
     stage setScene(initScene)
     stage.show
     stage title = "Warehouse Order Tracking Application V1.3"
-    stage width = 910
+    stage width = 1280
     stage height = 440
   }
 }

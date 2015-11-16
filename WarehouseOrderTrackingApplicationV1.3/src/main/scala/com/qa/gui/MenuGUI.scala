@@ -78,10 +78,13 @@ class MenuGUI extends JFXApp {
       text = ("View Stock Delivery Orders")
       minWidth = 225
       minHeight = 150
-//      // Add an event listener to the button
-//      onAction = (ae : ActionEvent) => {
-//        // Do something
-//      }
+      // Add an event listener to the button
+      onAction = (ae : ActionEvent) => {
+        // Create a stock delivery order GUI and show scene
+        val stockDeliveryOrderGUI : StockDeliveryGUI = new StockDeliveryGUI
+        stockDeliveryOrderGUI renderStockDeliveryOrders
+        
+      }
     }
     button
   }

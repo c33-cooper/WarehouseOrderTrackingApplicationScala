@@ -96,17 +96,6 @@ class LoginGUI(stage : PrimaryStage) {
     button
   }
   
-  def initTestButton : Button ={
-    // Test button
-    val testButton : Button = new Button {
-      onAction = (ae : ActionEvent) => {
-        val menuGUI : MenuGUI = new MenuGUI
-        menuGUI renderMenu
-      }
-    }
-    testButton
-  }
-  
   /**
      * Show error message for failed login
      */
@@ -150,7 +139,6 @@ class LoginGUI(stage : PrimaryStage) {
       add(new Label("Password: "), 0, 5)
       add(passwordField, 1, 5)
       add(initLoginButton(username, passwordField), 1, 7)
-      add(initTestButton, 2, 7)
     }
   }
   
